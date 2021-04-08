@@ -16,6 +16,7 @@
 		9AA853A5261C89F6002AF3F8 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA853A4261C89F6002AF3F8 /* Note.swift */; };
 		9AA853AA261DE8B0002AF3F8 /* NoteEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AA853A9261DE8B0002AF3F8 /* NoteEditorViewController.swift */; };
 		9AA853AD261DE8BF002AF3F8 /* NoteEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA853AC261DE8BF002AF3F8 /* NoteEditor.storyboard */; };
+		9AA853BA261F3BEB002AF3F8 /* NoteListView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA853B9261F3BEB002AF3F8 /* NoteListView.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9AA853A4261C89F6002AF3F8 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		9AA853A9261DE8B0002AF3F8 /* NoteEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditorViewController.swift; sourceTree = "<group>"; };
 		9AA853AC261DE8BF002AF3F8 /* NoteEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoteEditor.storyboard; sourceTree = "<group>"; };
+		9AA853B9261F3BEB002AF3F8 /* NoteListView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NoteListView.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +67,7 @@
 				9AA8538E261B578D002AF3F8 /* AppDelegate.swift */,
 				9AA85390261B578D002AF3F8 /* SceneDelegate.swift */,
 				9AA853B0261DE8EA002AF3F8 /* Common */,
-				9AA85392261B578D002AF3F8 /* NoteListViewController.swift */,
-				9AA85394261B578D002AF3F8 /* Main.storyboard */,
+				9AA853BC261F3BF4002AF3F8 /* NoteList */,
 				9AA853AF261DE8D6002AF3F8 /* NoteEditor */,
 				9AA85397261B5790002AF3F8 /* Assets.xcassets */,
 				9AA85399261B5790002AF3F8 /* LaunchScreen.storyboard */,
@@ -79,7 +80,8 @@
 			isa = PBXGroup;
 			children = (
 				9AA853AC261DE8BF002AF3F8 /* NoteEditor.storyboard */,
-				9AA853A9261DE8B0002AF3F8 /* NoteEditorViewController.swift */,
+				9AA853C2261F3CA8002AF3F8 /* ViewController */,
+				9AA853C3261F3CB3002AF3F8 /* View */,
 			);
 			path = NoteEditor;
 			sourceTree = "<group>";
@@ -87,6 +89,7 @@
 		9AA853B0261DE8EA002AF3F8 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				9AA85394261B578D002AF3F8 /* Main.storyboard */,
 				9AA853B1261DE8F4002AF3F8 /* Entity */,
 			);
 			path = Common;
@@ -98,6 +101,46 @@
 				9AA853A4261C89F6002AF3F8 /* Note.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		9AA853BC261F3BF4002AF3F8 /* NoteList */ = {
+			isa = PBXGroup;
+			children = (
+				9AA853B9261F3BEB002AF3F8 /* NoteListView.storyboard */,
+				9AA853BD261F3C0C002AF3F8 /* ViewController */,
+				9AA853BE261F3C22002AF3F8 /* View */,
+			);
+			path = NoteList;
+			sourceTree = "<group>";
+		};
+		9AA853BD261F3C0C002AF3F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9AA85392261B578D002AF3F8 /* NoteListViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9AA853BE261F3C22002AF3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9AA853C2261F3CA8002AF3F8 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9AA853A9261DE8B0002AF3F8 /* NoteEditorViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9AA853C3261F3CB3002AF3F8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +200,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA853BA261F3BEB002AF3F8 /* NoteListView.storyboard in Resources */,
 				9AA8539B261B5790002AF3F8 /* LaunchScreen.storyboard in Resources */,
 				9AA853AD261DE8BF002AF3F8 /* NoteEditor.storyboard in Resources */,
 				9AA85398261B5790002AF3F8 /* Assets.xcassets in Resources */,
