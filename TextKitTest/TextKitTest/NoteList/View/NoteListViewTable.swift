@@ -7,7 +7,35 @@
 
 import UIKit
 
-class NoteListViewTable: UITableView {
+final class NoteListViewTable: UITableView {
+    var items: [Any] = [] {
+        didset { reloadData() }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.delegate = self
+        self.dataSource = self
+        //self.tableFooterView = UIView()
+        
+        register(.init(nibName: "cell", bundle: nil), forCellReuseIdentifier: "cell")
+    }
+}
+
+extension NoteListViewTable: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let viewData = items[indexPath.row]
+        if let item = viewData as? String {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NoteListViewTableCell
+            //cell.setData()
+            return cell
+        }
+        return UITableViewCell()
+    }
     
 }
 
