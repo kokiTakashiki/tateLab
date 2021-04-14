@@ -18,7 +18,7 @@ final class NoteListViewTable: UITableView {
         self.dataSource = self
         //self.tableFooterView = UIView()
         
-        register(.init(nibName: "cell", bundle: nil), forCellReuseIdentifier: "cell")
+        register(.init(nibName: "NoteListViewTabelCell", bundle: nil), forCellReuseIdentifier: "NoteListViewTabelCell")
     }
 }
 
@@ -30,7 +30,7 @@ extension NoteListViewTable: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let viewData = items[indexPath.row]
         if let item = viewData as? String {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! NoteListViewTableCell
+            let cell = tableView.dequeueReusableCell(withIdentifier: "NoteListViewTabelCell", for: indexPath) as! NoteListViewTabelCell
             //cell.setData()
             return cell
         }
