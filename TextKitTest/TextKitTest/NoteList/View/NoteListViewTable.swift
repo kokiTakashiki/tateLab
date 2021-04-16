@@ -9,7 +9,7 @@ import UIKit
 
 final class NoteListViewTable: UITableView {
     var items: [Any] = [] {
-        didset { reloadData() }
+        didSet { reloadData() }
     }
     
     override func awakeFromNib() {
