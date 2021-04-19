@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NoteListViewController.swift
 //  TextKitTest
 //
 //  Created by 武田孝騎 on 2021/04/05.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NoteListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
