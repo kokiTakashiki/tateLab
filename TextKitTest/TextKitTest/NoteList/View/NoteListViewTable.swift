@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol NoteListViewTableDelegate: class {
+    func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable noteList: String)
+}
+
 final class NoteListViewTable: UITableView {
+    weak var selectDelegate: NoteListViewTableDelegate?
+    
     var items: [Any] = [] {
         didSet { reloadData() }
     }
@@ -29,13 +35,20 @@ extension NoteListViewTable: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let viewData = items[indexPath.row]
-        if let item = viewData as? String {
+        if let item = viewData as? Note {
             let cell = tableView.dequeueReusableCell(withIdentifier: "NoteListViewTabelCell", for: indexPath) as! NoteListViewTabelCell
-            //cell.setData()
+            cell.setData(text: item.title)
             return cell
         }
         return UITableViewCell()
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewData = items[indexPath.row]
+        if let item = viewData as? String {
+            selectDelegate?.noteListTable(self, didSelectNoteListTable: item)
+        }
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
 

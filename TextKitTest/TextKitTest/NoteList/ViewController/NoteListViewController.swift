@@ -9,7 +9,7 @@ import UIKit
 
 class NoteListViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var tableView: NoteListViewTable!
     
     var notes = [
       Note(text: "Shopping List\r\r1. Cheese\r2. Biscuits\r3. Sausages\r4. IMPORTANT Cash for going out!\r5. -potatoes-\r6. A copy of iOS8 by Tutorials\r7. A new iPhone\r8. A present for mum"),
@@ -23,8 +23,18 @@ class NoteListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tableView.selectDelegate = self
     }
-
-
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        tableView.items = notes
+        tableView.reloadData()
+    }
 }
 
+extension NoteListViewController: NoteListViewTableDelegate {
+    func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable noteList: String) {
+        
+    }
+}

@@ -8,7 +8,7 @@
 import UIKit
 
 class NoteListViewTabelCell: UITableViewCell {
-    func setData() {
-        
+    func setData(text: String) {
+        self.textLabel?.text = text
     }
 }
