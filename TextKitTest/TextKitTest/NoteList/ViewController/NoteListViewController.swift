@@ -30,11 +30,14 @@ class NoteListViewController: UIViewController {
         super.viewDidAppear(animated)
         tableView.items = notes
         tableView.reloadData()
+        navigationController?.navigationBar.barStyle = .black
     }
 }
 
 extension NoteListViewController: NoteListViewTableDelegate {
-    func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable noteList: String) {
-        
+    func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable note: Note) {
+        let edidtorVC = UIStoryboard(name: "NoteEditor", bundle: nil).instantiateInitialViewController() as! NoteEditorViewController
+        edidtorVC.note = note
+        navigationController?.pushViewController(edidtorVC, animated: true)
     }
 }

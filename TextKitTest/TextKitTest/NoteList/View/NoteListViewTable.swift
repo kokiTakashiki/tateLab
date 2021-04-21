@@ -8,7 +8,7 @@
 import UIKit
 
 protocol NoteListViewTableDelegate: class {
-    func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable noteList: String)
+    func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable note: Note)
 }
 
 final class NoteListViewTable: UITableView {
@@ -45,7 +45,7 @@ extension NoteListViewTable: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewData = items[indexPath.row]
-        if let item = viewData as? String {
+        if let item = viewData as? Note {
             selectDelegate?.noteListTable(self, didSelectNoteListTable: item)
         }
         tableView.deselectRow(at: indexPath, animated: true)
