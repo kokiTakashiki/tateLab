@@ -31,6 +31,16 @@ class NoteListViewController: UIViewController {
         tableView.items = notes
         tableView.reloadData()
         navigationController?.navigationBar.barStyle = .black
+        let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(self.addNote))
+        self.navigationItem.rightBarButtonItem = addButton
+    }
+    
+    @objc func addNote() {
+        print("TapAdd")
+        let edidtorVC = UIStoryboard(name: "NoteEditor", bundle: nil).instantiateInitialViewController() as! NoteEditorViewController
+        edidtorVC.note = Note(text: " ")
+        notes.append(edidtorVC.note)
+        navigationController?.pushViewController(edidtorVC, animated: true)
     }
 }
 
