@@ -47,6 +47,7 @@ class NoteListViewController: UIViewController {
 extension NoteListViewController: NoteListViewTableDelegate {
     func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable note: Note) {
         let edidtorVC = UIStoryboard(name: "NoteEditor", bundle: nil).instantiateInitialViewController() as! NoteEditorViewController
+        print("note",note.contents)
         edidtorVC.note = note
         navigationController?.pushViewController(edidtorVC, animated: true)
     }

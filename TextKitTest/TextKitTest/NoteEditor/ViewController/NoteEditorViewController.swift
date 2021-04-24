@@ -15,9 +15,12 @@ class NoteEditorViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.isScrollEnabled = true
-        //textView.text = note.contents
+        textView.text = note.contents
         navigationController?.navigationBar.barStyle = .black
         notificationCenterAdd()
+        textView.font = .preferredFont(forTextStyle: .body)
+        textView.adjustsFontForContentSizeCategory = true
+        
     }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
