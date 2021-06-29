@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol NoteListViewTableDelegate: class {
+protocol NoteListViewTableDelegate: AnyObject {
     func noteListTable(_ tableView: NoteListViewTable, didSelectNoteListTable note: Note)
 }
 
