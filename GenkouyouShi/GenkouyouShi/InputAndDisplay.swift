@@ -40,7 +40,7 @@ struct InputAndDisplay: View {
 }
 
 // 複数行入力するためのTextField
-struct MultilineTextField: UIViewRepresentable {
+struct oriMultilineTextField: UIViewRepresentable {
     @Binding var text: String
 
     func makeUIView(context: Context) -> UITextView {
@@ -65,9 +65,9 @@ struct MultilineTextField: UIViewRepresentable {
     
     class Coordinator : NSObject, UITextViewDelegate {
 
-        var parent: MultilineTextField
+        var parent: oriMultilineTextField
 
-        init(_ textView: MultilineTextField) {
+        init(_ textView: oriMultilineTextField) {
             self.parent = textView
         }
 
