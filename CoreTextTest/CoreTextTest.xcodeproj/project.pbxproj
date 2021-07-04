@@ -13,7 +13,9 @@
 		9AC61835268B5FF70066C008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC61833268B5FF70066C008 /* Main.storyboard */; };
 		9AC61837268B5FF80066C008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC61836268B5FF80066C008 /* Assets.xcassets */; };
 		9AC6183A268B5FF80066C008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC61838268B5FF80066C008 /* LaunchScreen.storyboard */; };
-		9AC61842268B60230066C008 /* VerticalTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61841268B60230066C008 /* VerticalTextView.swift */; };
+		9AC61844268B65220066C008 /* TategakiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61843268B65220066C008 /* TategakiView.swift */; };
+		9AC61846268B67D10066C008 /* TategakiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61845268B67D10066C008 /* TategakiTextView.swift */; };
+		9AC618482690035D0066C008 /* VerticalTextView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC618472690035D0066C008 /* VerticalTextView2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		9AC61839268B5FF80066C008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AC6183B268B5FF80066C008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9AC61841268B60230066C008 /* VerticalTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTextView.swift; sourceTree = "<group>"; };
+		9AC61843268B65220066C008 /* TategakiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiView.swift; sourceTree = "<group>"; };
+		9AC61845268B67D10066C008 /* TategakiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiTextView.swift; sourceTree = "<group>"; };
+		9AC618472690035D0066C008 /* VerticalTextView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTextView2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +67,9 @@
 				9AC6182F268B5FF70066C008 /* SceneDelegate.swift */,
 				9AC61831268B5FF70066C008 /* ViewController.swift */,
 				9AC61841268B60230066C008 /* VerticalTextView.swift */,
+				9AC618472690035D0066C008 /* VerticalTextView2.swift */,
+				9AC61843268B65220066C008 /* TategakiView.swift */,
+				9AC61845268B67D10066C008 /* TategakiTextView.swift */,
 				9AC61833268B5FF70066C008 /* Main.storyboard */,
 				9AC61836268B5FF80066C008 /* Assets.xcassets */,
 				9AC61838268B5FF80066C008 /* LaunchScreen.storyboard */,
@@ -140,10 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AC618482690035D0066C008 /* VerticalTextView2.swift in Sources */,
 				9AC61832268B5FF70066C008 /* ViewController.swift in Sources */,
+				9AC61846268B67D10066C008 /* TategakiTextView.swift in Sources */,
 				9AC6182E268B5FF70066C008 /* AppDelegate.swift in Sources */,
+				9AC61844268B65220066C008 /* TategakiView.swift in Sources */,
 				9AC61830268B5FF70066C008 /* SceneDelegate.swift in Sources */,
-				9AC61842268B60230066C008 /* VerticalTextView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +310,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokitakeda.CoreTextTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -319,7 +329,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.kokitakeda.CoreTextTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

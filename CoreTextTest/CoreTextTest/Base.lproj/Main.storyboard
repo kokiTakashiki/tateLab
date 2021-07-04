@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="ipad11_0rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,35 +13,62 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreTextTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1194" height="834"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AXm-il-ZiV">
-                                <rect key="frame" x="0.0" y="44" width="414" height="190"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AXm-il-ZiV">
+                                <rect key="frame" x="0.0" y="0.0" width="305" height="348"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qrC-pB-raE" customClass="VerticalTextView" customModule="CoreTextTest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="242" width="414" height="620"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrC-pB-raE" customClass="VerticalTextView" customModule="CoreTextTest" customModuleProvider="target">
+                                <rect key="frame" x="313" y="0.0" width="290" height="362"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uG1-VA-4vJ" customClass="TategakiView" customModule="CoreTextTest" customModuleProvider="target">
+                                <rect key="frame" x="611" y="0.0" width="294" height="362"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvf-xZ-i96" customClass="TategakiTextView" customModule="CoreTextTest" customModuleProvider="target">
+                                <rect key="frame" x="913" y="0.0" width="281" height="348"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qrC-pB-raE" firstAttribute="leading" secondItem="AXm-il-ZiV" secondAttribute="trailing" constant="8" symbolic="YES" id="08f-3H-CXa"/>
+                            <constraint firstItem="qrC-pB-raE" firstAttribute="bottom" secondItem="uG1-VA-4vJ" secondAttribute="bottom" id="3zI-p8-Obx"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="leading" secondItem="uG1-VA-4vJ" secondAttribute="trailing" constant="8" symbolic="YES" id="4T9-ac-XfJ"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="top" secondItem="qrC-pB-raE" secondAttribute="top" id="8mJ-Pf-8UC"/>
+                            <constraint firstItem="uG1-VA-4vJ" firstAttribute="leading" secondItem="qrC-pB-raE" secondAttribute="trailing" constant="8" symbolic="YES" id="OYh-6W-WCu"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="leading" secondItem="uG1-VA-4vJ" secondAttribute="trailing" constant="8" id="W5z-E2-We0"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W6K-RP-F7W"/>
+                            <constraint firstItem="AXm-il-ZiV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="avd-MH-oco"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="g76-IK-iiP"/>
+                            <constraint firstItem="qrC-pB-raE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="313" id="gAn-Nd-XZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Qvf-xZ-i96" secondAttribute="bottom" constant="466" id="h2P-kf-xw7"/>
+                            <constraint firstAttribute="trailing" secondItem="qrC-pB-raE" secondAttribute="trailing" constant="591" id="l1j-46-cZK"/>
+                            <constraint firstItem="AXm-il-ZiV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="lEE-8Y-BuV"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="913" id="mYf-A3-ynd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qrC-pB-raE" secondAttribute="bottom" constant="452" id="oIj-6r-7bW"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="bottom" secondItem="AXm-il-ZiV" secondAttribute="bottom" id="upx-bO-QUO"/>
+                            <constraint firstItem="Qvf-xZ-i96" firstAttribute="top" secondItem="uG1-VA-4vJ" secondAttribute="top" id="veB-g2-zYy"/>
+                        </constraints>
                     </view>
                     <connections>
+                        <outlet property="tategakiTextView" destination="Qvf-xZ-i96" id="oz5-VF-EiM"/>
+                        <outlet property="tategakiView" destination="uG1-VA-4vJ" id="Jse-kT-6SH"/>
                         <outlet property="textView" destination="AXm-il-ZiV" id="rps-Dr-ZAd"/>
                         <outlet property="verticalTextView" destination="qrC-pB-raE" id="j6D-QO-P7a"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="28.985507246376812" y="88.392857142857139"/>
+            <point key="canvasLocation" x="-200" y="89.928057553956847"/>
         </scene>
     </scenes>
     <resources>

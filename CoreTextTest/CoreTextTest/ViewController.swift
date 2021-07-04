@@ -10,6 +10,8 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var verticalTextView: VerticalTextView!
+    @IBOutlet weak var tategakiView: TategakiView!
+    @IBOutlet weak var tategakiTextView: TategakiTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +21,22 @@ class ViewController: UIViewController {
         layoutManager.addTextContainer(container)
         layoutManager.textStorage = textView.textStorage
         verticalTextView.layoutManager = layoutManager
+        
+        tategakiView.text = textView.text
+        tategakiTextView.text = textView.text
+        
+        textView.delegate = self
     }
+}
 
-
+extension ViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        // labelの更新
+        OperationQueue.main.addOperation({
+            // UI の更新処理を記述する
+            self.tategakiView.text = textView.text//"変更後の文字列"
+        })
+    }
 }
 
 class VerticalTextContainer: NSTextContainer {
