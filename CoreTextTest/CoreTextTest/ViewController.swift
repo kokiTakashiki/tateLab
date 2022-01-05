@@ -10,19 +10,26 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var verticalTextView: VerticalTextView!
-    @IBOutlet weak var tategakiView: TategakiView!
+    @IBOutlet weak var tategakiView: VerticalView!
     @IBOutlet weak var tategakiTextView: TategakiTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        let container = VerticalTextContainer(size: verticalTextView.bounds.size)
-        let layoutManager = NSLayoutManager()
-        layoutManager.addTextContainer(container)
-        layoutManager.textStorage = textView.textStorage
-        verticalTextView.layoutManager = layoutManager
+//        let container = VerticalTextContainer(size: verticalTextView.bounds.size)
+//        let layoutManager = NSLayoutManager()
+//        layoutManager.addTextContainer(container)
+//        layoutManager.textStorage = verticalTextView.textStorage
+//        verticalTextView.layoutManager = layoutManager
         
-        tategakiView.text = textView.text
+        let container2 = VerticalTextContainer(size: tategakiView.bounds.size)
+        let layoutManager2 = NSLayoutManager()
+        layoutManager2.addTextContainer(container2)
+        layoutManager2.textStorage = textView.textStorage
+        tategakiView.layoutManager = layoutManager2
+        
+        //tategakiView.text = textView.text
+        verticalTextView.text = textView.text
         tategakiTextView.text = textView.text
         
         textView.delegate = self
@@ -34,7 +41,7 @@ extension ViewController: UITextViewDelegate {
         // labelの更新
         OperationQueue.main.addOperation({
             // UI の更新処理を記述する
-            self.tategakiView.text = textView.text//"変更後の文字列"
+            //self.tategakiView.text = textView.text//"変更後の文字列"
         })
     }
 }

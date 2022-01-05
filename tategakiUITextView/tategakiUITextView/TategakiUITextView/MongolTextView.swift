@@ -6,6 +6,37 @@ class UITextViewWithoutMenu: UITextView {
         
         return true
     }
+    
+    var scale: CGFloat = 1
+
+    public override func draw(_ rect: CGRect) {
+        let font = CTFontCreateWithName("NotoSansJP-Regular-Tate" as CFString, 40, nil)
+        //let text = "あ";
+        var glyph: CGGlyph = 0
+        if text.count == 0 { return }
+        var unichar: UniChar = text.utf16[text.utf16.startIndex]
+        CTFontGetGlyphsForCharacters(font, &unichar, &glyph, 1)
+        var flip = CGAffineTransform(translationX: 10, y: 50)
+        flip = flip.scaledBy(x: 1, y: -1)
+        //flip = flip.rotated(by: CGFloat(-M_PI_2))
+        let path = CTFontCreatePathForGlyph(font, glyph, &flip)!
+        //let c = UIGraphicsGetCurrentContext()
+        // コンテキストを取得
+        guard let c = UIGraphicsGetCurrentContext() else { return }
+
+        UIColor.blue.set()
+        c.scaleBy(x: scale, y: scale)
+        c.addPath(path)
+        c.setLineWidth(4.0)
+        //CGContextSetLineWidth(c, 4)
+        c.setLineCap(.round)
+        //CGContextSetLineCap(c, kCGLineCapRound)
+        c.setLineJoin(.round)
+        //CGContextSetLineJoin(c, kCGLineJoinRound)
+        c.setLineDash(phase: 0, lengths: [])
+        //CGContextSetLineDash(c, 0, nil, 0)
+        c.strokePath()
+    }
 }
 
 
@@ -20,7 +51,7 @@ public class UIMongolTextView: UIView {
     fileprivate var view = UITextViewWithoutMenu()
     fileprivate let rotationView = UIView()
     fileprivate var userInteractionEnabledForSubviews = true
-    fileprivate let mongolFontName = "ChimeeWhiteMirrored"
+    fileprivate let mongolFontName = "NotoSansJP-Regular-Tate"
     fileprivate let defaultFontSize: CGFloat = 17
     fileprivate let mongolTextStorage = MongolTextStorage()
     
@@ -294,10 +325,11 @@ public class UIMongolTextView: UIView {
         rotationView.addConstraints([leadingConstraint, trailingConstraint, topConstraint, bottomConstraint])
         
         // set font if user didn't specify size in IB
-        if self.view.font?.fontName != mongolFontName {
-            
-            view.font = UIFont(name: mongolFontName, size: defaultFontSize)
-        }
+//        if self.view.font?.fontName != mongolFontName {
+//
+//            view.font = UIFont(name: mongolFontName, size: defaultFontSize)
+//        }
+        view.font = UIFont(name: mongolFontName, size: defaultFontSize)
         
     }
     
@@ -351,7 +383,5 @@ public class UIMongolTextView: UIView {
         
         return transform
     }
-    
-    
 }
 

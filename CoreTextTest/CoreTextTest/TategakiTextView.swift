@@ -23,7 +23,7 @@ class TategakiTextView: UITextView {
         let frame = createFrame(string: string, rect: rect.applying(transform.inverted()))!
         context.textMatrix = CGAffineTransform.identity
         
-        //context.scaleBy(x: 1, y: -1)
+        context.scaleBy(x: 1, y: -1)
         //let frame = createFrame(string: string, rect: rect)!
         
         CTFrameDraw(frame, context)

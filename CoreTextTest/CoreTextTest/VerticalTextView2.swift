@@ -8,15 +8,15 @@
 import Foundation
 import UIKit
 
-final class VerticalTextView: UIView {
+final class VerticalTextView: UITextView {
     
-    var layoutManager: NSLayoutManager?
+    //var layoutManager: NSLayoutManager?
     
     override func draw(_ rect: CGRect) {
         let context = UIGraphicsGetCurrentContext();
         
         // Enumerate all the line fragments in the text
-        layoutManager?.enumerateLineFragments(forGlyphRange: NSMakeRange(0, layoutManager!.numberOfGlyphs), using: {
+        layoutManager.enumerateLineFragments(forGlyphRange: NSMakeRange(0, layoutManager.numberOfGlyphs), using: {
             (lineRect: CGRect, usedRect: CGRect, textContainer: NSTextContainer!, glyphRange: NSRange, stop: UnsafeMutablePointer<ObjCBool>) -> Void in
             
             context?.saveGState()
@@ -31,9 +31,11 @@ final class VerticalTextView: UIView {
             context?.translateBy(x: 0, y: -(lineRect.origin.y + lineRect.size.height))
             
             // Draw the line fragment
-            self.layoutManager?.drawGlyphs(forGlyphRange: glyphRange, at: CGPoint.zero)
+            self.layoutManager.drawGlyphs(forGlyphRange: glyphRange, at: CGPoint.zero)
             
             context?.restoreGState();
         })
+        
+        layoutManager.showCGGlyphs(<#T##glyphs: UnsafePointer<CGGlyph>##UnsafePointer<CGGlyph>#>, positions: <#T##UnsafePointer<CGPoint>#>, count: <#T##Int#>, font: <#T##UIFont#>, textMatrix: <#T##CGAffineTransform#>, attributes: <#T##[NSAttributedString.Key : Any]#>, in: <#T##CGContext#>)
     }
 }
