@@ -11,15 +11,16 @@ import TTTAttributedLabel
 class ViewController: UIViewController {
     
     // 縦書きラベル
-    var myLabel:TTTAttributedLabel!
+    var myLabel:SelectableLabelTate!
     
     // 表示用ラベル
-    var label = UILabel()
+    var label = SelectableLabel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        //let backgroundView = UIView(frame: CGRect(x:50, y:50, width:250, height:500))
         label.frame = CGRect(x:50, y:50, width:250, height:500)
         label.text = "Test"
         label.numberOfLines = 100
@@ -27,10 +28,14 @@ class ViewController: UIViewController {
         //　ラベル枠の枠線太さと色
         label.layer.borderColor = UIColor.blue.cgColor
         label.layer.borderWidth = 2
+        // うえよせ
+        //label.numberOfLines = 0
+        //label.sizeToFit()
+        //backgroundView.addSubview(label)
         self.view.addSubview(label)
         
         
-        myLabel = TTTAttributedLabel(frame: CGRect(x: 0, y: 200, width: 500, height: 250))
+        myLabel = SelectableLabelTate(frame: CGRect(x: 0, y: 200, width: 500, height: 250))
         myLabel.center.x = self.view.frame.width - 150
         myLabel.center.y = 250 + 100
 

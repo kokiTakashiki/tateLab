@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct InputAndDisplay: View {
-    @State var text: String = ""
+    @State var text: String = "テスト文字"
 
     let windowWid = UIScreen.main.bounds.width
     let windowhgt = UIScreen.main.bounds.height

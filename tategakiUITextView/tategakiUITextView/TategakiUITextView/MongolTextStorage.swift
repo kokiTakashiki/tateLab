@@ -143,7 +143,6 @@ class MongolTextStorage {
         // insert new unicode
         unicodeText.insert(newText, atIndex: unicodeIndexForCursor)
         unicodeIndexForCursor += newText.length
-        
     }
     
     func replaceWordAtCursorWith(_ replacementString: String, atGlyphIndex glyphIndex: Int) {

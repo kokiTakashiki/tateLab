@@ -12,8 +12,8 @@ struct GenkouyouShiApp: App {
     var body: some Scene {
         WindowGroup {
             //ContentView()
-            //InputAndDisplay()
-            InputAndDisplayTate()
+            InputAndDisplay()
+            //InputAndDisplayTate()
         }
     }
 }

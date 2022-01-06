@@ -25,7 +25,7 @@ public class TategakiView: UIView {
 
         let baseAttributes: [NSAttributedString.Key : Any] = [
             .verticalGlyphForm: true,
-            .font : UIFont.systemFont(ofSize: 20.0),
+            .font : UIFont.systemFont(ofSize: 13.0),
 //            NSAttributedString.Key.font: UIFont.hiraMinProN_W6(size: 25),
         ]
         let attributedText = NSMutableAttributedString(string: text ?? "", attributes: baseAttributes)

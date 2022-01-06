@@ -35,7 +35,5 @@ final class VerticalTextView: UITextView {
             
             context?.restoreGState();
         })
-        
-        layoutManager.showCGGlyphs(<#T##glyphs: UnsafePointer<CGGlyph>##UnsafePointer<CGGlyph>#>, positions: <#T##UnsafePointer<CGPoint>#>, count: <#T##Int#>, font: <#T##UIFont#>, textMatrix: <#T##CGAffineTransform#>, attributes: <#T##[NSAttributedString.Key : Any]#>, in: <#T##CGContext#>)
     }
 }

@@ -13,6 +13,8 @@
 		9AA5D56025F37EFD00EC6DF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5D55E25F37EFD00EC6DF1 /* Main.storyboard */; };
 		9AA5D56225F37EFF00EC6DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5D56125F37EFF00EC6DF1 /* Assets.xcassets */; };
 		9AA5D56525F37EFF00EC6DF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AA5D56325F37EFF00EC6DF1 /* LaunchScreen.storyboard */; };
+		9ACCD07627858EDA00877ABE /* SelectableLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD07527858EDA00877ABE /* SelectableLabel.swift */; };
+		9ACCD078278592BA00877ABE /* SelectableLabelTate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD077278592BA00877ABE /* SelectableLabelTate.swift */; };
 		C1B9FE7BADE2822E8968277C /* Pods_GenkouyouShi2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97222FB68381393FBE05CBCF /* Pods_GenkouyouShi2.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		9AA5D56125F37EFF00EC6DF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9AA5D56425F37EFF00EC6DF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9AA5D56625F37EFF00EC6DF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ACCD07527858EDA00877ABE /* SelectableLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableLabel.swift; sourceTree = "<group>"; };
+		9ACCD077278592BA00877ABE /* SelectableLabelTate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableLabelTate.swift; sourceTree = "<group>"; };
 		C88FD00A65A2EB63F237C216 /* Pods-GenkouyouShi2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenkouyouShi2.release.xcconfig"; path = "Target Support Files/Pods-GenkouyouShi2/Pods-GenkouyouShi2.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -83,6 +87,8 @@
 				9AA5D55825F37EFD00EC6DF1 /* AppDelegate.swift */,
 				9AA5D55A25F37EFD00EC6DF1 /* SceneDelegate.swift */,
 				9AA5D55C25F37EFD00EC6DF1 /* ViewController.swift */,
+				9ACCD07527858EDA00877ABE /* SelectableLabel.swift */,
+				9ACCD077278592BA00877ABE /* SelectableLabelTate.swift */,
 				9AA5D55E25F37EFD00EC6DF1 /* Main.storyboard */,
 				9AA5D56125F37EFF00EC6DF1 /* Assets.xcassets */,
 				9AA5D56325F37EFF00EC6DF1 /* LaunchScreen.storyboard */,
@@ -205,6 +211,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACCD078278592BA00877ABE /* SelectableLabelTate.swift in Sources */,
+				9ACCD07627858EDA00877ABE /* SelectableLabel.swift in Sources */,
 				9AA5D55D25F37EFD00EC6DF1 /* ViewController.swift in Sources */,
 				9AA5D55925F37EFD00EC6DF1 /* AppDelegate.swift in Sources */,
 				9AA5D55B25F37EFD00EC6DF1 /* SceneDelegate.swift in Sources */,

@@ -17,6 +17,7 @@
 		9AC61846268B67D10066C008 /* TategakiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61845268B67D10066C008 /* TategakiTextView.swift */; };
 		9AC618482690035D0066C008 /* VerticalTextView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC618472690035D0066C008 /* VerticalTextView2.swift */; };
 		9ACCD072278554D600877ABE /* VerticalTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61841268B60230066C008 /* VerticalTextView.swift */; };
+		9ACCD0742785686300877ABE /* tategakiLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0732785686300877ABE /* tategakiLayoutManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		9AC61843268B65220066C008 /* TategakiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiView.swift; sourceTree = "<group>"; };
 		9AC61845268B67D10066C008 /* TategakiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiTextView.swift; sourceTree = "<group>"; };
 		9AC618472690035D0066C008 /* VerticalTextView2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalTextView2.swift; sourceTree = "<group>"; };
+		9ACCD0732785686300877ABE /* tategakiLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tategakiLayoutManager.swift; path = ../../tategakiUITextView/tategakiUITextView/TategakiUITextView/tategakiLayoutManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				9AC618472690035D0066C008 /* VerticalTextView2.swift */,
 				9AC61843268B65220066C008 /* TategakiView.swift */,
 				9AC61845268B67D10066C008 /* TategakiTextView.swift */,
+				9ACCD0732785686300877ABE /* tategakiLayoutManager.swift */,
 				9AC61833268B5FF70066C008 /* Main.storyboard */,
 				9AC61836268B5FF80066C008 /* Assets.xcassets */,
 				9AC61838268B5FF80066C008 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9AC618482690035D0066C008 /* VerticalTextView2.swift in Sources */,
+				9ACCD0742785686300877ABE /* tategakiLayoutManager.swift in Sources */,
 				9ACCD072278554D600877ABE /* VerticalTextView.swift in Sources */,
 				9AC61832268B5FF70066C008 /* ViewController.swift in Sources */,
 				9AC61846268B67D10066C008 /* TategakiTextView.swift in Sources */,

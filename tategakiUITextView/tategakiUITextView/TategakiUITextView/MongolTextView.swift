@@ -330,7 +330,8 @@ public class UIMongolTextView: UIView {
 //            view.font = UIFont(name: mongolFontName, size: defaultFontSize)
 //        }
         view.font = UIFont(name: mongolFontName, size: defaultFontSize)
-        
+        //let layoutManager = tategakiLayoutManager()
+        //view.textContainer.replaceLayoutManager(layoutManager)
     }
     
     
