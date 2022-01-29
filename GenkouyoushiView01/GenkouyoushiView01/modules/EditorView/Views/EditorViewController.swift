@@ -14,8 +14,19 @@ protocol EditorUserInterface: AnyObject {
 @MainActor
 final class EditorViewController: UIViewController {
 
+    // MARK: Type Aliases
+
+    // MARK: Stored Instance Properties
+    
     private var presenter: EditorEventHandler!
+    
+    private var editData: EditEntitiy!
+
+    // MARK: Computed Instance Properties
+
+    // MARK: IBOutlets
     @IBOutlet weak var textView: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -36,6 +47,12 @@ extension EditorViewController: UITextViewDelegate {
 //            self.tategakiView.text = textView.text//"変更後の文字列"
 //            self.tategakiView.setNeedsDisplay()
 //        })
+        Task {
+            editData.title = "test"
+            editData.description = "2022/01/29"
+            editData.content = textView.text
+            await presenter.didChangeSelectionEditContent(content: editData)
+        }
     }
 }
 

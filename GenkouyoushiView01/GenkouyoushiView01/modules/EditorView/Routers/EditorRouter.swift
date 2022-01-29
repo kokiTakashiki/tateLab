@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 protocol EditorRouterInput {
-    
+    func updatetategakiViewText(content: EditEntitiy)
 }
 
 final class EditorRouter {
@@ -25,7 +25,7 @@ final class EditorRouter {
 
     // MARK: Type Methods
 
-    static func assembleModule() -> EditorViewController {
+    @MainActor static func assembleModule() -> EditorViewController {
 //        guard let view = R.storyboard.monsterList.instantiateInitialViewController() else {
 //            fatalError("Fail to load MonsterListViewController from Storyboard.")
 //        }
@@ -33,17 +33,21 @@ final class EditorRouter {
         guard let view = controller.instantiateStoryBoardToViewController(storyBoardName: UIViewController.editorView, withIdentifier: UIViewController.editorViewID) as? EditorViewController else {
             fatalError("Fail to load EditorViewController from Storyboard.")
         }
-        let interactor = MonsterListInteractor(
-            spotlightRepository: SpotlightClient(imageCacheManager: imageCacheManager)
-        )
+        let interactor = EditorInteractor()
         let router = EditorRouter(viewController: view)
-        let presenter = EditorPresenter(view: view, interactor: interactor, router: router)
+        let presenter = EditorPresenter(view: view as! EditorUserInterface, interactor: interactor, router: router)
 
         //view.inject(presenter: presenter)
-        interactor.presenter = presenter
+        interactor.presenter = presenter as? EditorInteractorOutput
 
         return view
     }
 
     // MARK: Other Private Methods
+}
+
+extension EditorRouter: EditorRouterInput {
+    func updatetategakiViewText(content: EditEntitiy) {
+        
+    }
 }

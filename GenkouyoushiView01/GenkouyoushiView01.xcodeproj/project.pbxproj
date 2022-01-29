@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
+		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
+		9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntitiy.swift */; };
 		9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */; };
 		9A8242A32796C5DA00251DC1 /* EditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8242A22796C5DA00251DC1 /* EditorPresenter.swift */; };
 		9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0852786C3BD00877ABE /* AppDelegate.swift */; };
@@ -22,6 +24,8 @@
 
 /* Begin PBXFileReference section */
 		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
+		9A7460AF27A574DC00905C75 /* EditEntitiy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntitiy.swift; sourceTree = "<group>"; };
 		9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerViewController.swift; sourceTree = "<group>"; };
 		9A8242A22796C5DA00251DC1 /* EditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorPresenter.swift; sourceTree = "<group>"; };
 		9ACCD0822786C3BD00877ABE /* GenkouyoushiView01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenkouyoushiView01.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,20 +67,87 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		9A82429D2795774200251DC1 /* MainView */ = {
+		9A7460A827A0F3F900905C75 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9A7460AE27A5741B00905C75 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460AF27A574DC00905C75 /* EditEntitiy.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9A7460B127A5793500905C75 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460B227A5796000905C75 /* EditorContainer */,
+				9A82429D2795774200251DC1 /* EditorView */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		9A7460B227A5796000905C75 /* EditorContainer */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460B427A579B200905C75 /* Interactors */,
+				9A7460B527A579C600905C75 /* Presenters */,
+				9A7460B627A579D400905C75 /* Routers */,
+				9A7460B727A579DF00905C75 /* Views */,
+			);
+			path = EditorContainer;
+			sourceTree = "<group>";
+		};
+		9A7460B427A579B200905C75 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9A7460B527A579C600905C75 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9A7460B627A579D400905C75 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9A7460B727A579DF00905C75 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */,
+				9ACCD0992786C3D400877ABE /* TategakiView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A82429D2795774200251DC1 /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460AE27A5741B00905C75 /* Entities */,
 				9A82429E2795775D00251DC1 /* Interactors */,
 				9A82429F2795777B00251DC1 /* Presenters */,
 				9A8242A02795778E00251DC1 /* Routers */,
 				9A8242A12795779E00251DC1 /* Views */,
 			);
-			path = MainView;
+			path = EditorView;
 			sourceTree = "<group>";
 		};
 		9A82429E2795775D00251DC1 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
+				9A7460A6279EE8D200905C75 /* EditorInteractor.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -100,10 +171,8 @@
 		9A8242A12795779E00251DC1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */,
 				9ACCD0892786C3BD00877ABE /* EditorViewController.swift */,
-				9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */,
-				9ACCD0992786C3D400877ABE /* TategakiView.swift */,
+				9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -127,10 +196,11 @@
 		9ACCD0842786C3BD00877ABE /* GenkouyoushiView01 */ = {
 			isa = PBXGroup;
 			children = (
-				9A7460A4279D9B8700905C75 /* Extensions */,
 				9ACCD0852786C3BD00877ABE /* AppDelegate.swift */,
 				9ACCD0872786C3BD00877ABE /* SceneDelegate.swift */,
-				9A82429D2795774200251DC1 /* MainView */,
+				9A7460A4279D9B8700905C75 /* Extensions */,
+				9A7460B127A5793500905C75 /* modules */,
+				9A7460A827A0F3F900905C75 /* Repository */,
 				9ACCD08E2786C3BF00877ABE /* Assets.xcassets */,
 				9ACCD0902786C3BF00877ABE /* LaunchScreen.storyboard */,
 				9ACCD0932786C3BF00877ABE /* Info.plist */,
@@ -219,7 +289,9 @@
 				9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */,
 				9ACCD09A2786C3D400877ABE /* TategakiView.swift in Sources */,
 				9ACCD0882786C3BD00877ABE /* SceneDelegate.swift in Sources */,
+				9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */,
 				9AF7A39B279D7F5500484C37 /* EditorRouter.swift in Sources */,
+				9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */,
 				9A8242A32796C5DA00251DC1 /* EditorPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
