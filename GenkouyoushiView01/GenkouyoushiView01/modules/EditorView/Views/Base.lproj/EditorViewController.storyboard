@@ -54,7 +54,7 @@
                                             <constraint firstAttribute="width" constant="2031" id="39l-Xo-gVP"/>
                                         </constraints>
                                         <connections>
-                                            <segue destination="qJF-nD-cbm" kind="embed" id="QTb-Ge-hmf"/>
+                                            <segue destination="qJF-nD-cbm" kind="embed" identifier="EmbedSegue" id="QTb-Ge-hmf"/>
                                         </connections>
                                     </containerView>
                                 </subviews>
@@ -91,7 +91,7 @@
         <!--Tategaki Container View Controller-->
         <scene sceneID="DVt-39-vwi">
             <objects>
-                <viewController id="qJF-nD-cbm" customClass="TategakiContainerViewController" customModule="GenkouyoushiView01" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="TategakiContainerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qJF-nD-cbm" customClass="TategakiContainerViewController" customModule="GenkouyoushiView01" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jkL-Kq-JN0">
                         <rect key="frame" x="0.0" y="0.0" width="2031" height="710"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

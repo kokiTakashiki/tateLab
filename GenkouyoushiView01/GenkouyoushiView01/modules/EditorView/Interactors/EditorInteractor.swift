@@ -17,6 +17,7 @@ final class EditorInteractor {
     // MARK: Stored Instance Properties
 
     weak var presenter: EditorInteractorOutput!
+    weak var containerPresenter: TategakiContainerInteractorOutput!
 
     //private let editorRepository: MonstersRepository
     //private let monstersTempRepository: MonstersTempRepository

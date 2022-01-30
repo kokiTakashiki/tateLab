@@ -33,10 +33,37 @@ final class EditorViewController: UIViewController {
         //tategakiView.text = textView.text
         textView.delegate = self
         
+        editData = EditEntitiy(title: "test", description: "2022/01/29", content: textView.text)
+        
         Task {
             await presenter.viewDidLoad()
         }
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch (segue.identifier, segue.destination) {
+        case ("EmbedSegue"?, let destination as TategakiContainerViewController):
+            Task {
+                await presenter.prepareTategakiContainer(containerView: destination, editData: editData)
+            }
+        default:
+            ()
+        }
+    }
+    
+    // MARK: IBActions
+
+    // MARK: Other Internal Methods
+
+    func inject(
+        presenter: EditorEventHandler
+        //logger: LoggerProtocol = Logger.default
+    ) {
+        self.presenter = presenter
+        //self.logger = logger
+    }
+
+    // MARK: Other Private Methods
 }
 
 extension EditorViewController: UITextViewDelegate {
@@ -48,13 +75,11 @@ extension EditorViewController: UITextViewDelegate {
 //            self.tategakiView.setNeedsDisplay()
 //        })
         Task {
-            editData.title = "test"
-            editData.description = "2022/01/29"
             editData.content = textView.text
             await presenter.didChangeSelectionEditContent(content: editData)
         }
     }
 }
 
-extension EditorUserInterface {
+extension EditorViewController: EditorUserInterface {
 }

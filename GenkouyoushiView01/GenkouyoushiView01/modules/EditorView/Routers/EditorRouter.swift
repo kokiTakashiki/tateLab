@@ -8,10 +8,12 @@
 import Foundation
 import UIKit
 
+@MainActor
 protocol EditorRouterInput {
-    func updatetategakiViewText(content: EditEntitiy)
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy)
 }
 
+@MainActor
 final class EditorRouter {
     // MARK: Stored Instance Properties
 
@@ -25,7 +27,7 @@ final class EditorRouter {
 
     // MARK: Type Methods
 
-    @MainActor static func assembleModule() -> EditorViewController {
+    static func assembleModule() -> EditorViewController {
 //        guard let view = R.storyboard.monsterList.instantiateInitialViewController() else {
 //            fatalError("Fail to load MonsterListViewController from Storyboard.")
 //        }
@@ -35,10 +37,10 @@ final class EditorRouter {
         }
         let interactor = EditorInteractor()
         let router = EditorRouter(viewController: view)
-        let presenter = EditorPresenter(view: view as! EditorUserInterface, interactor: interactor, router: router)
+        let presenter = EditorPresenter(view: view, interactor: interactor, router: router)
 
-        //view.inject(presenter: presenter)
-        interactor.presenter = presenter as? EditorInteractorOutput
+        view.inject(presenter: presenter)
+        interactor.presenter = presenter
 
         return view
     }
@@ -47,7 +49,7 @@ final class EditorRouter {
 }
 
 extension EditorRouter: EditorRouterInput {
-    func updatetategakiViewText(content: EditEntitiy) {
-        
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) {
+        TategakiContainerRouter.assembleModule(seguePrepareView: containerView, editData: editData)
     }
 }

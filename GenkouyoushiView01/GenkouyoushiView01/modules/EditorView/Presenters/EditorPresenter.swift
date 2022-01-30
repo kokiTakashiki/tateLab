@@ -10,6 +10,7 @@ import Foundation
 @MainActor
 protocol EditorEventHandler: AnyObject {
     func viewDidLoad() async
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) async
     func didChangeSelectionEditContent(content: EditEntitiy) async
 }
 
@@ -54,8 +55,19 @@ extension EditorPresenter: EditorEventHandler {
         }
     }
     
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) async {
+        do {
+            router.prepareTategakiContainer(containerView: containerView, editData: editData)
+        } catch {
+            // TODO: エラーハンドリング
+        }
+    }
+    
     func didChangeSelectionEditContent(content: EditEntitiy) async {
-        router.updatetategakiViewText(content: content)
+        //TategakiContainerPresenter.updateTategakiViewText(content: content)
         //await interactor.saveForSpotlight(monster)
     }
+}
+
+extension EditorPresenter: EditorInteractorOutput {
 }
