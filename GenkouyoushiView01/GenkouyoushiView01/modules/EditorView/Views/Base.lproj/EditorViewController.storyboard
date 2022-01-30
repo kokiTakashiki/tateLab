@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Editor View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="EditorViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="EditorViewController" customModule="GenkouyoushiView01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1366" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="crh-2I-YJ8">
+                                <rect key="frame" x="20" y="24" width="400" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="2bd-ig-wzv"/>
+                                    <constraint firstAttribute="height" constant="710" id="3QQ-de-3iE"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.拙者親方と申すは、お立合の中に、御存じのお方もござりましょうが、お江戸を発って二十里上方、相州小田原一色町をお過ぎなされて、青物町を登りへおいでなさるれば、欄干橋虎屋藤衛門只今は剃髪致して、円斉となのりまする。
+
+元朝より大晦日まで、お手に入れまする此の薬は、昔ちんの国の唐人、外郎という人、わが朝へ来り、帝へ参内の折から、この薬を深く籠め置き、用ゆる時は一粒ずつ、冠のすき間より取り出す。依ってその名を帝より、とうちんこうと賜わる。即ち文字には「頂き、透く、香い」とかいて「とうちんこう」と申す。
+
+　只今はこの薬、殊の外世上に弘まり、方々に似看板を出し、イヤ、小田原の、灰俵の、さん俵の、炭俵のと色々に申せども、平仮名をもって「ういろう」と記せしは親方円斉ばかり。もしやお立合の内に、熱海か塔の沢へ湯治にお出でなさるるか、又は伊勢御参宮の折からは、必ず門違いなされまするな。お登りならば右の方、お下りなれば左側、八方が八つ棟、表が三つ棟玉堂造り、破風には菊に桐のとうの御紋を御赦免あって、系図正しき薬でござる。
+
+　イヤ最前より家名の自慢ばかり申しても、ご存じない方には、正身の胡椒の丸呑、白川夜船、さらば一粒食べかけて、その気味合をお目にかけましょう。先ずこの薬をかように一粒舌の上にのせまして、腹内へ納めますると、イヤどうも云えぬは、胃、心、肺、肝がすこやかになりて、薫風咽より来り、口中微涼を生ずるが如し。魚鳥、茸、麺類の食合せ、其の他、万病速効ある事神の如し。
+
+　さて、この薬、第一の奇妙には、舌のまわることが、銭ゴマがはだしで逃げる。ひょっと舌がまわり出すと、矢も盾もたまらぬじゃ。そりゃそりゃ、そらそりゃ、まわってきたわ、まわってくるわ。アワヤ咽、さたらな舌にカ牙サ歯音、ハマの二つは唇の軽重、開合さわやかに、あかさたなはまやらわ、おこそとのほもよろを、一つへぎへぎに、へぎほしはじかみ、盆まめ、盆米、盆ごぼう、摘蓼、摘豆、つみ山椒、書写山の社僧正、粉米のなまがみ、粉米のなまがみ、こん粉米の小生がみ、繻子ひじゅす、繻子、繻珍、親も嘉兵衛、子も嘉兵衛、親かへい子かへい、子かへい親かへい、ふる栗の木の古切口。雨合羽か、番合羽か、貴様のきゃはんも皮脚絆、我等がきゃはんも皮脚絆、しっかわ袴のしっぽころびを、三針はりながにちょと縫うて、ぬうてちょとぶんだせ、かわら撫子、野石竹。のら如来、のら如来、三のら如来に六のら如来。一寸先のお小仏におけつまずきゃるな、細溝にどじょにょろり。京のなま鱈奈良なま学鰹、ちょと四、五貫目、お茶立ちょ、茶立ちょ、ちゃっと立ちょ茶立ちょ、青竹茶筅でお茶ちゃっと立ちゃ。
+
+　来るわ来るわ何が来る、高野の山のおこけら小僧。狸百匹、箸百善、天目百杯、棒八百本。
+武具、馬具、ぶぐ、ばぐ、三ぶぐばぐ、合わせて武具、馬具、六ぶぐばぐ。菊、栗、きく、くり、三菊栗、合せて菊、栗、六菊栗。麦、ごみ、むぎ、ごみ、三むぎごみ、合せてむぎ、ごみ、六むぎごみ、あの長押の長薙刀は、誰が長薙刀ぞ。向うの胡麻がらは、荏のごまがらか、真ごまがらか、あれこそほんの真胡麻殻。がらぴい、がらぴい風車、おきゃがれこぼし、おきゃがれ小法師、ゆんべもこぼして又こぼした。たあぷぽぽ、たあぷぽぽ、ちりから、ちりから、つったっぽ、たっぽたっぽ一丁だこ、落ちたら煮て食お、煮ても焼いても食われぬものは、五徳、鉄きゅう、かな熊童子に、石熊、石持、虎熊、虎きす、
+中にも、東寺の羅生門には、茨木童子がうで栗五合つかんでおむしゃる、かの頼光のひざもと去らず。
+
+　鮒、きんかん、椎茸、定めて後段な、そば切り、そうめん、うどんか、愚鈍な小新発地。小棚の、小舌の、小桶に、こ味噌が、こ有るぞ、小杓子、こ持って、こすくって、こよこせ、おっと合点だ、心得たんぼの川崎、神奈川、保土ケ谷、戸塚は、走って行けば、やいとを摺りむく、三里ばかりか、藤沢、平塚、大磯がしや、小磯の宿を七つ起きして、早天早々、相州小田原とうちん香、隠れござらぬ貴賎群衆の花のお江戸の花ういろう、あれあの花を見てお心をおやわらぎやという。
+
+　産子、這子に至るまで、この外郎の御評判、御存じないとは申されまいまいつぶり、角だせ、棒出せ、ぼうぼうまゆに、臼、杵、すりばち、ばちばちぐわらぐわらぐわらと、羽目を弛して今日お出のいずれも様に、上げねばならぬ、売らねばならぬと、息せい引っぱり、東方世界の薬の元〆、
+薬師如来も照覧あれと、ホホ敬って、ういろうは、いらっしゃりませぬか。</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0W-nG-nZJ">
+                                <rect key="frame" x="428" y="24" width="918" height="710"/>
+                                <subviews>
+                                    <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Khg-Xd-qxV">
+                                        <rect key="frame" x="0.0" y="0.0" width="2031" height="710"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="2031" id="39l-Xo-gVP"/>
+                                        </constraints>
+                                        <connections>
+                                            <segue destination="qJF-nD-cbm" kind="embed" identifier="EmbedSegue" id="QTb-Ge-hmf"/>
+                                        </connections>
+                                    </containerView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Khg-Xd-qxV" firstAttribute="centerY" secondItem="R0W-nG-nZJ" secondAttribute="centerY" id="DTh-1K-plt"/>
+                                    <constraint firstItem="Khg-Xd-qxV" firstAttribute="top" secondItem="7dV-v2-nmG" secondAttribute="top" id="HBO-JC-f4Y"/>
+                                    <constraint firstItem="Khg-Xd-qxV" firstAttribute="bottom" secondItem="7dV-v2-nmG" secondAttribute="bottom" id="JZq-54-mJ6"/>
+                                    <constraint firstItem="7dV-v2-nmG" firstAttribute="trailing" secondItem="Khg-Xd-qxV" secondAttribute="trailing" symbolic="YES" id="cPO-x5-oTJ"/>
+                                    <constraint firstItem="Khg-Xd-qxV" firstAttribute="leading" secondItem="7dV-v2-nmG" secondAttribute="leading" id="ztF-pr-LDa"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="7dV-v2-nmG"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="ofx-Tp-4SJ"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="crh-2I-YJ8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Axd-5G-kvD"/>
+                            <constraint firstItem="R0W-nG-nZJ" firstAttribute="leading" secondItem="crh-2I-YJ8" secondAttribute="trailing" constant="8" symbolic="YES" id="Sd5-ZJ-Q1U"/>
+                            <constraint firstItem="R0W-nG-nZJ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="dhl-tM-HOH"/>
+                            <constraint firstItem="R0W-nG-nZJ" firstAttribute="top" secondItem="crh-2I-YJ8" secondAttribute="top" id="em4-zW-HBC"/>
+                            <constraint firstItem="crh-2I-YJ8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nWz-cM-5Hg"/>
+                            <constraint firstItem="R0W-nG-nZJ" firstAttribute="bottom" secondItem="crh-2I-YJ8" secondAttribute="bottom" id="p7w-ev-nmM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textView" destination="crh-2I-YJ8" id="EkP-16-gbe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="29.868228404099558" y="83.7890625"/>
+        </scene>
+        <!--Tategaki Container View Controller-->
+        <scene sceneID="DVt-39-vwi">
+            <objects>
+                <viewController storyboardIdentifier="TategakiContainerViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qJF-nD-cbm" customClass="TategakiContainerViewController" customModule="GenkouyoushiView01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jkL-Kq-JN0">
+                        <rect key="frame" x="0.0" y="0.0" width="2031" height="710"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yoj-X3-qYy" customClass="TategakiView" customModule="GenkouyoushiView01" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="2031" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="85L-Kq-Gys"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="yoj-X3-qYy" secondAttribute="bottom" id="Q2f-qW-gFQ"/>
+                            <constraint firstAttribute="trailing" secondItem="yoj-X3-qYy" secondAttribute="trailing" id="QmT-Qt-oWA"/>
+                            <constraint firstItem="yoj-X3-qYy" firstAttribute="leading" secondItem="jkL-Kq-JN0" secondAttribute="leading" id="RtL-xJ-rTM"/>
+                            <constraint firstItem="yoj-X3-qYy" firstAttribute="top" secondItem="jkL-Kq-JN0" secondAttribute="top" id="uP4-ZW-Hkl"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tategakiView" destination="yoj-X3-qYy" id="sDP-LL-kp0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kyj-l2-hCl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159.6632503660322" y="708.984375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

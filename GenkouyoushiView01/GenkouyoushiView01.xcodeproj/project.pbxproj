@@ -7,25 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
+		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
+		9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntitiy.swift */; };
+		9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */; };
+		9A7460C127A67F8700905C75 /* TategakiContainerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */; };
+		9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */; };
+		9A8242A32796C5DA00251DC1 /* EditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8242A22796C5DA00251DC1 /* EditorPresenter.swift */; };
 		9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0852786C3BD00877ABE /* AppDelegate.swift */; };
 		9ACCD0882786C3BD00877ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0872786C3BD00877ABE /* SceneDelegate.swift */; };
-		9ACCD08A2786C3BD00877ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0892786C3BD00877ABE /* ViewController.swift */; };
-		9ACCD08D2786C3BD00877ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCD08B2786C3BD00877ABE /* Main.storyboard */; };
+		9ACCD08A2786C3BD00877ABE /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0892786C3BD00877ABE /* EditorViewController.swift */; };
+		9ACCD08D2786C3BD00877ABE /* EditorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */; };
 		9ACCD08F2786C3BF00877ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCD08E2786C3BF00877ABE /* Assets.xcassets */; };
 		9ACCD0922786C3BF00877ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCD0902786C3BF00877ABE /* LaunchScreen.storyboard */; };
 		9ACCD09A2786C3D400877ABE /* TategakiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0992786C3D400877ABE /* TategakiView.swift */; };
+		9AF7A39B279D7F5500484C37 /* EditorRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF7A39A279D7F5500484C37 /* EditorRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
+		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
+		9A7460AF27A574DC00905C75 /* EditEntitiy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntitiy.swift; sourceTree = "<group>"; };
+		9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerPresenter.swift; sourceTree = "<group>"; };
+		9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerRouter.swift; sourceTree = "<group>"; };
+		9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerViewController.swift; sourceTree = "<group>"; };
+		9A8242A22796C5DA00251DC1 /* EditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorPresenter.swift; sourceTree = "<group>"; };
 		9ACCD0822786C3BD00877ABE /* GenkouyoushiView01.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenkouyoushiView01.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ACCD0852786C3BD00877ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ACCD0872786C3BD00877ABE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9ACCD0892786C3BD00877ABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9ACCD08C2786C3BD00877ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9ACCD0892786C3BD00877ABE /* EditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorViewController.swift; sourceTree = "<group>"; };
+		9ACCD08C2786C3BD00877ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/EditorViewController.storyboard; sourceTree = "<group>"; };
 		9ACCD08E2786C3BF00877ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ACCD0912786C3BF00877ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ACCD0932786C3BF00877ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9ACCD0992786C3D400877ABE /* TategakiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TategakiView.swift; path = ../../CoreTextTest/CoreTextTest/TategakiView.swift; sourceTree = "<group>"; };
+		9ACCD0992786C3D400877ABE /* TategakiView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TategakiView.swift; sourceTree = "<group>"; };
+		9AF7A39A279D7F5500484C37 /* EditorRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +55,94 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A7460A4279D9B8700905C75 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460A5279D9BAA00905C75 /* UIView */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9A7460A5279D9BAA00905C75 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		9A7460A827A0F3F900905C75 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		9A7460AE27A5741B00905C75 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460AF27A574DC00905C75 /* EditEntitiy.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9A7460B127A5793500905C75 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				9A82429D2795774200251DC1 /* EditorView */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		9A82429D2795774200251DC1 /* EditorView */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460AE27A5741B00905C75 /* Entities */,
+				9A82429E2795775D00251DC1 /* Interactors */,
+				9A82429F2795777B00251DC1 /* Presenters */,
+				9A8242A02795778E00251DC1 /* Routers */,
+				9A8242A12795779E00251DC1 /* Views */,
+			);
+			path = EditorView;
+			sourceTree = "<group>";
+		};
+		9A82429E2795775D00251DC1 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460A6279EE8D200905C75 /* EditorInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		9A82429F2795777B00251DC1 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9A8242A22796C5DA00251DC1 /* EditorPresenter.swift */,
+				9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9A8242A02795778E00251DC1 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9AF7A39A279D7F5500484C37 /* EditorRouter.swift */,
+				9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9A8242A12795779E00251DC1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9ACCD0892786C3BD00877ABE /* EditorViewController.swift */,
+				9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */,
+				9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */,
+				9ACCD0992786C3D400877ABE /* TategakiView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9ACCD0792786C3BD00877ABE = {
 			isa = PBXGroup;
 			children = (
@@ -60,9 +164,9 @@
 			children = (
 				9ACCD0852786C3BD00877ABE /* AppDelegate.swift */,
 				9ACCD0872786C3BD00877ABE /* SceneDelegate.swift */,
-				9ACCD0892786C3BD00877ABE /* ViewController.swift */,
-				9ACCD0992786C3D400877ABE /* TategakiView.swift */,
-				9ACCD08B2786C3BD00877ABE /* Main.storyboard */,
+				9A7460A4279D9B8700905C75 /* Extensions */,
+				9A7460B127A5793500905C75 /* modules */,
+				9A7460A827A0F3F900905C75 /* Repository */,
 				9ACCD08E2786C3BF00877ABE /* Assets.xcassets */,
 				9ACCD0902786C3BF00877ABE /* LaunchScreen.storyboard */,
 				9ACCD0932786C3BF00877ABE /* Info.plist */,
@@ -86,6 +190,8 @@
 			dependencies = (
 			);
 			name = GenkouyoushiView01;
+			packageProductDependencies = (
+			);
 			productName = GenkouyoushiView01;
 			productReference = 9ACCD0822786C3BD00877ABE /* GenkouyoushiView01.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +220,8 @@
 				Base,
 			);
 			mainGroup = 9ACCD0792786C3BD00877ABE;
+			packageReferences = (
+			);
 			productRefGroup = 9ACCD0832786C3BD00877ABE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,7 +238,7 @@
 			files = (
 				9ACCD0922786C3BF00877ABE /* LaunchScreen.storyboard in Resources */,
 				9ACCD08F2786C3BF00877ABE /* Assets.xcassets in Resources */,
-				9ACCD08D2786C3BD00877ABE /* Main.storyboard in Resources */,
+				9ACCD08D2786C3BD00877ABE /* EditorViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,22 +249,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9ACCD08A2786C3BD00877ABE /* ViewController.swift in Sources */,
+				9ACCD08A2786C3BD00877ABE /* EditorViewController.swift in Sources */,
+				9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */,
+				9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */,
 				9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */,
+				9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */,
 				9ACCD09A2786C3D400877ABE /* TategakiView.swift in Sources */,
 				9ACCD0882786C3BD00877ABE /* SceneDelegate.swift in Sources */,
+				9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */,
+				9AF7A39B279D7F5500484C37 /* EditorRouter.swift in Sources */,
+				9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */,
+				9A7460C127A67F8700905C75 /* TategakiContainerRouter.swift in Sources */,
+				9A8242A32796C5DA00251DC1 /* EditorPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9ACCD08B2786C3BD00877ABE /* Main.storyboard */ = {
+		9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				9ACCD08C2786C3BD00877ABE /* Base */,
 			);
-			name = Main.storyboard;
+			name = EditorViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		9ACCD0902786C3BF00877ABE /* LaunchScreen.storyboard */ = {
@@ -298,7 +414,7 @@
 				INFOPLIST_FILE = GenkouyoushiView01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = EditorViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +442,7 @@
 				INFOPLIST_FILE = GenkouyoushiView01/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = EditorViewController;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
