@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             return
         }
 
-        let rootViewController = EditorRouter.assembleModule()
+        let rootViewController = DemoListRouter.assembleModule()
         window = UIWindow(windowScene: windowScene)
         window?.makeKeyAndVisible()
         window?.rootViewController = UINavigationController(rootViewController: rootViewController)

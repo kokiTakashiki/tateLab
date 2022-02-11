@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol DemoListUserInterface {
+protocol DemoListUserInterface: AnyObject {
 }
 
 final class DemoListViewController: UIViewController {
@@ -15,11 +15,41 @@ final class DemoListViewController: UIViewController {
 
     // MARK: Stored Instance Properties
     
-    private var presenter: EditorEventHandler!
+    private var presenter: DemoListEventHandler!
     
-    private var editData: EditEntity!
+    private var tableData: DemoListEntity!
 
     // MARK: Computed Instance Properties
 
     // MARK: IBOutlets
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        Task {
+            await presenter.viewDidLoad()
+        }
+    }
+    
+    // MARK: IBActions
+
+    // MARK: Other Internal Methods
+    @IBOutlet weak var demoListCollectionView: UICollectionView! {
+        willSet {
+            
+        }
+    }
+    
+    func inject(
+        presenter: DemoListEventHandler
+        //logger: LoggerProtocol = Logger.default
+    ) {
+        self.presenter = presenter
+        //self.logger = logger
+    }
+
+    // MARK: Other Private Methods
+}
+
+extension DemoListViewController: DemoListUserInterface {
 }

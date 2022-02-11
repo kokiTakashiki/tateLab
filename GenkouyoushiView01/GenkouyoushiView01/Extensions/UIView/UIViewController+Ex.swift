@@ -23,4 +23,10 @@ extension UIViewController {
     class var editorViewID: String {
         return "EditorViewController"
     }
+    class var demoListView: String {
+        return "DemoListViewController"
+    }
+    class var demoListViewID: String {
+        return "DemoListViewController"
+    }
 }

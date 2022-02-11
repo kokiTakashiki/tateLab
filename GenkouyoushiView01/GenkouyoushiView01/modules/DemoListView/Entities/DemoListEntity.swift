@@ -6,3 +6,12 @@
 //
 
 import Foundation
+
+struct DemoListEntity: Equatable {
+    var title: String
+    var description: String
+}
+
+extension DemoListEntity: Codable {}
+
+extension DemoListEntity: Sendable {}
