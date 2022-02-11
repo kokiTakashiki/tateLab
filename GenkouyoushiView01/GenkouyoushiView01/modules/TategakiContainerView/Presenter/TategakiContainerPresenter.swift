@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 protocol TategakiContainerEventHandler: AnyObject {
     func viewDidLoad() async
-    func updateTategakiViewText(content: EditEntitiy) async
+    func updateTategakiViewText(content: EditEntity) async
 }
 
 protocol TategakiContainerInteractorOutput: AnyObject {
@@ -54,7 +54,7 @@ extension TategakiContainerPresenter: TategakiContainerEventHandler {
         }
     }
     
-    func updateTategakiViewText(content: EditEntitiy) async {
+    func updateTategakiViewText(content: EditEntity) async {
         view.updateText(editData: content)
     }
 }

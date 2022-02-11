@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A4516E627B6E94100DA5363 /* DemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516E527B6E94000DA5363 /* DemoListViewController.swift */; };
+		9A4516E927B6E9DF00DA5363 /* DemoListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516E827B6E9DF00DA5363 /* DemoListEntity.swift */; };
 		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
 		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
-		9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntitiy.swift */; };
+		9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntity.swift */; };
 		9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */; };
 		9A7460C127A67F8700905C75 /* TategakiContainerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */; };
 		9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */; };
@@ -25,9 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A4516E527B6E94000DA5363 /* DemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListViewController.swift; sourceTree = "<group>"; };
+		9A4516E827B6E9DF00DA5363 /* DemoListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListEntity.swift; sourceTree = "<group>"; };
 		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
-		9A7460AF27A574DC00905C75 /* EditEntitiy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntitiy.swift; sourceTree = "<group>"; };
+		9A7460AF27A574DC00905C75 /* EditEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntity.swift; sourceTree = "<group>"; };
 		9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerPresenter.swift; sourceTree = "<group>"; };
 		9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerRouter.swift; sourceTree = "<group>"; };
 		9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,47 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9A4516E127B6E8E500DA5363 /* DemoListView */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516E727B6E9BC00DA5363 /* Entities */,
+				9A4516E427B6E91000DA5363 /* Presenters */,
+				9A4516E327B6E90600DA5363 /* Routers */,
+				9A4516E227B6E8FB00DA5363 /* Views */,
+			);
+			path = DemoListView;
+			sourceTree = "<group>";
+		};
+		9A4516E227B6E8FB00DA5363 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516E527B6E94000DA5363 /* DemoListViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A4516E327B6E90600DA5363 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9A4516E427B6E91000DA5363 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9A4516E727B6E9BC00DA5363 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516E827B6E9DF00DA5363 /* DemoListEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		9A7460A4279D9B8700905C75 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +161,7 @@
 		9A7460AE27A5741B00905C75 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				9A7460AF27A574DC00905C75 /* EditEntitiy.swift */,
+				9A7460AF27A574DC00905C75 /* EditEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -124,6 +169,7 @@
 		9A7460B127A5793500905C75 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				9A4516E127B6E8E500DA5363 /* DemoListView */,
 				9A82429D2795774200251DC1 /* EditorView */,
 				9A4516DA27B6D82C00DA5363 /* TategakiContainerView */,
 			);
@@ -287,10 +333,12 @@
 				9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */,
 				9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */,
 				9ACCD09A2786C3D400877ABE /* TategakiView.swift in Sources */,
+				9A4516E627B6E94100DA5363 /* DemoListViewController.swift in Sources */,
 				9ACCD0882786C3BD00877ABE /* SceneDelegate.swift in Sources */,
 				9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */,
+				9A4516E927B6E9DF00DA5363 /* DemoListEntity.swift in Sources */,
 				9AF7A39B279D7F5500484C37 /* EditorRouter.swift in Sources */,
-				9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */,
+				9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */,
 				9A7460C127A67F8700905C75 /* TategakiContainerRouter.swift in Sources */,
 				9A8242A32796C5DA00251DC1 /* EditorPresenter.swift in Sources */,
 			);
@@ -447,6 +495,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = EditorViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +524,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = EditorViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

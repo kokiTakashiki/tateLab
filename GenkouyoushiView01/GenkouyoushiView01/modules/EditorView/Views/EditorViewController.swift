@@ -20,7 +20,7 @@ final class EditorViewController: UIViewController {
     
     private var presenter: EditorEventHandler!
     
-    private var editData: EditEntitiy!
+    private var editData: EditEntity!
 
     // MARK: Computed Instance Properties
 
@@ -33,7 +33,7 @@ final class EditorViewController: UIViewController {
         //tategakiView.text = textView.text
         textView.delegate = self
         
-        editData = EditEntitiy(title: "test", description: "2022/01/29", content: textView.text)
+        editData = EditEntity(title: "test", description: "2022/01/29", content: textView.text)
         
         Task {
             await presenter.viewDidLoad()
