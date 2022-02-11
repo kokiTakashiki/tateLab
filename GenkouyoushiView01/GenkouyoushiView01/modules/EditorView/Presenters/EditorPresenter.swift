@@ -30,6 +30,8 @@ final class EditorPresenter {
     private let router: EditorRouterInput
 
     // MARK: Computed Instance Properties
+    
+    private var tategakiContainerPresenter: TategakiContainerEventHandler?
 
     // MARK: Initializers
 
@@ -57,15 +59,20 @@ extension EditorPresenter: EditorEventHandler {
     
     func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) async {
         do {
-            router.prepareTategakiContainer(containerView: containerView, editData: editData)
+            tategakiContainerPresenter = router.prepareTategakiContainer(containerView: containerView, editData: editData)
         } catch {
             // TODO: エラーハンドリング
         }
     }
     
     func didChangeSelectionEditContent(content: EditEntitiy) async {
-        //TategakiContainerPresenter.updateTategakiViewText(content: content)
         //await interactor.saveForSpotlight(monster)
+        do {
+            guard let nonnilTategakiContainerPresenter = tategakiContainerPresenter else { return }
+            await nonnilTategakiContainerPresenter.updateTategakiViewText(content: content)
+        } catch {
+            // TODO: エラーハンドリング
+        }
     }
 }
 

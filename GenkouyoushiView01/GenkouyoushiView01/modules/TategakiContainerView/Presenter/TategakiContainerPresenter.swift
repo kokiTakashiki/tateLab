@@ -40,7 +40,7 @@ final class TategakiContainerPresenter {
         //self.interactor = interactor
         self.router = router
     }
-
+    
     // MARK: Other Private Methods
 
 }
@@ -53,7 +53,9 @@ extension TategakiContainerPresenter: TategakiContainerEventHandler {
             // TODO: エラーハンドリング
         }
     }
+    
     func updateTategakiViewText(content: EditEntitiy) async {
+        view.updateText(editData: content)
     }
 }
 
