@@ -40,6 +40,7 @@ final class EditorViewController: UIViewController {
         }
     }
     
+    // TategakiContainerは完全にEditorViewControllerの配下
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch (segue.identifier, segue.destination) {
         case ("EmbedSegue"?, let destination as TategakiContainerViewController):

@@ -27,13 +27,14 @@ final class TategakiContainerRouter {
     // MARK: Type Methods
 
     // segueで既にviewの初期化が始まっているのでviperの設定だけ
-    static func assembleModule(seguePrepareView: TategakiContainerViewController, editData: EditEntitiy) {
+    static func assembleModule(seguePrepareView: TategakiContainerViewController, editData: EditEntitiy) -> TategakiContainerPresenter {
         //let interactor = TategakiContainerInteractor()
         let router = TategakiContainerRouter(viewController: seguePrepareView)
         let presenter = TategakiContainerPresenter(view: seguePrepareView, router: router)
 
         seguePrepareView.inject(presenter: presenter, editData: editData)
         //interactor.presenter = presenter
+        return presenter
     }
 
     // MARK: Other Private Methods

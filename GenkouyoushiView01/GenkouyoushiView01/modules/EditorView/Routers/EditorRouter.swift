@@ -10,7 +10,7 @@ import UIKit
 
 @MainActor
 protocol EditorRouterInput {
-    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy)
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) -> TategakiContainerPresenter
 }
 
 @MainActor
@@ -49,7 +49,8 @@ final class EditorRouter {
 }
 
 extension EditorRouter: EditorRouterInput {
-    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) {
-        TategakiContainerRouter.assembleModule(seguePrepareView: containerView, editData: editData)
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) -> TategakiContainerPresenter {
+        let result = TategakiContainerRouter.assembleModule(seguePrepareView: containerView, editData: editData)
+        return result
     }
 }

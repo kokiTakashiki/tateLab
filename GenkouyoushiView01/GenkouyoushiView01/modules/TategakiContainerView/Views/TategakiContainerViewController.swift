@@ -9,6 +9,7 @@ import UIKit
 
 @MainActor
 protocol TategakiContainerUserInterface: AnyObject {
+    func updateText(editData: EditEntitiy)
 }
 
 @MainActor
@@ -64,4 +65,8 @@ final class TategakiContainerViewController: UIViewController {
 }
 
 extension TategakiContainerViewController: TategakiContainerUserInterface {
+    func updateText(editData: EditEntitiy) {
+        tategakiView.text = editData.content
+        tategakiView.setNeedsDisplay()
+    }
 }

@@ -55,6 +55,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A4516DA27B6D82C00DA5363 /* TategakiContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516DC27B6D84F00DA5363 /* Routers */,
+				9A4516DB27B6D83E00DA5363 /* Presenter */,
+				9A4516DD27B6D86400DA5363 /* Views */,
+			);
+			path = TategakiContainerView;
+			sourceTree = "<group>";
+		};
+		9A4516DB27B6D83E00DA5363 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		9A4516DC27B6D84F00DA5363 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9A4516DD27B6D86400DA5363 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */,
+				9ACCD0992786C3D400877ABE /* TategakiView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9A7460A4279D9B8700905C75 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				9A82429D2795774200251DC1 /* EditorView */,
+				9A4516DA27B6D82C00DA5363 /* TategakiContainerView */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -118,7 +154,6 @@
 			isa = PBXGroup;
 			children = (
 				9A8242A22796C5DA00251DC1 /* EditorPresenter.swift */,
-				9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -127,7 +162,6 @@
 			isa = PBXGroup;
 			children = (
 				9AF7A39A279D7F5500484C37 /* EditorRouter.swift */,
-				9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -137,8 +171,6 @@
 			children = (
 				9ACCD0892786C3BD00877ABE /* EditorViewController.swift */,
 				9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */,
-				9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */,
-				9ACCD0992786C3D400877ABE /* TategakiView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
