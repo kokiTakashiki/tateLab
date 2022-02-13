@@ -32,7 +32,7 @@ final class EditorRouter {
 //            fatalError("Fail to load MonsterListViewController from Storyboard.")
 //        }
         let controller = UIViewController()
-        guard let view = controller.instantiateStoryBoardToViewController(storyBoardName: UIViewController.editorView, withIdentifier: UIViewController.editorViewID) as? EditorViewController else {
+        guard let view = controller.instantiateStoryBoardToViewController(storyBoardName: .editorView, withIdentifier: .editorViewID) as? EditorViewController else {
             fatalError("Fail to load EditorViewController from Storyboard.")
         }
         let interactor = EditorInteractor()

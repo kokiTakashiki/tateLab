@@ -10,6 +10,7 @@ import UIKit
 
 @MainActor
 protocol DemoListRouterInput {
+    func showEditorl()
 }
 
 @MainActor
@@ -31,7 +32,7 @@ final class DemoListRouter {
 //            fatalError("Fail to load MonsterListViewController from Storyboard.")
 //        }
         let controller = UIViewController()
-        guard let view = controller.instantiateStoryBoardToViewController(storyBoardName: UIViewController.demoListView, withIdentifier: UIViewController.demoListViewID) as? DemoListViewController else {
+        guard let view = controller.instantiateStoryBoardToViewController(storyBoardName: .demoListView, withIdentifier: .demoListViewID) as? DemoListViewController else {
             fatalError("Fail to load EditorViewController from Storyboard.")
         }
         //let interactor =
@@ -48,4 +49,8 @@ final class DemoListRouter {
 }
 
 extension DemoListRouter: DemoListRouterInput {
+    func showEditorl() {
+        let vc = EditorRouter.assembleModule()
+        viewController.navigationController?.pushViewController(vc, animated: true)
+    }
 }

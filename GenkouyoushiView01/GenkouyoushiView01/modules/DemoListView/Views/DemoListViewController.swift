@@ -17,7 +17,7 @@ final class DemoListViewController: UIViewController {
     
     private var presenter: DemoListEventHandler!
     
-    private var tableData: DemoListEntity!
+    private var collectionData: [DemoListEntity] = []
 
     // MARK: Computed Instance Properties
 
@@ -25,6 +25,8 @@ final class DemoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        collectionData.append(DemoListEntity(title: "test", description: "test"))
         
         Task {
             await presenter.viewDidLoad()
@@ -35,8 +37,9 @@ final class DemoListViewController: UIViewController {
 
     // MARK: Other Internal Methods
     @IBOutlet weak var demoListCollectionView: UICollectionView! {
-        willSet {
-            
+        didSet {
+            demoListCollectionView.register(.init(nibName: .demoListCollectionCell, bundle: nil),
+                                            forCellWithReuseIdentifier: .demoListCollectionCell)
         }
     }
     
@@ -49,6 +52,57 @@ final class DemoListViewController: UIViewController {
     }
 
     // MARK: Other Private Methods
+}
+
+extension DemoListViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        collectionData.count
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: .demoListCollectionCell, for: indexPath) as? DemoListCollectionViewCell else {
+            fatalError("Fail to load CollectionViewCell.")
+        }
+
+        Task {
+            do {
+                let data = collectionData[indexPath.row]
+                //let icon = try await imageCacheManager.cacheImage(imageUrl: monster.iconUrl)
+                cell.setup(name: data.title, elevation: 1.0)
+            } catch {
+                // TODO: エラーハンドリング
+                //logger.exception(error, file: #file, function: #function, line: #line, column: #column)
+            }
+        }
+
+        return cell
+    }
+}
+
+extension DemoListViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        CGSize(width: demoListCollectionView.frame.width - 16.0 * 2, height: 116.0)
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        12.0
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        12.0
+    }
+}
+
+extension DemoListViewController: UICollectionViewDelegate {
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        Task {
+            let data = collectionData[indexPath.row]
+            //await presenter.didSelectMonster(monster: monster)
+            await presenter.didSelectDemo()
+        }
+    }
+
 }
 
 extension DemoListViewController: DemoListUserInterface {

@@ -10,6 +10,7 @@ import Foundation
 @MainActor
 protocol DemoListEventHandler: AnyObject {
     func viewDidLoad() async
+    func didSelectDemo() async
 }
 
 protocol DemoListInteractorOutput: AnyObject {
@@ -50,6 +51,10 @@ extension DemoListPresenter: DemoListEventHandler {
         } catch {
             // TODO: エラーハンドリング
         }
+    }
+    
+    func didSelectDemo() async {
+        router.showEditorl()
     }
 }
 
