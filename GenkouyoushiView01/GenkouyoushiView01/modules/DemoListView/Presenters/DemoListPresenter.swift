@@ -47,14 +47,15 @@ final class DemoListPresenter {
 extension DemoListPresenter: DemoListEventHandler {
     func viewDidLoad() async {
         do {
-            
+            let demoList = [DemoListEntity(title: "test", description: "test")]
+            view.updateDemoList(demoList)
         } catch {
             // TODO: エラーハンドリング
         }
     }
     
     func didSelectDemo() async {
-        router.showEditorl()
+        router.showEditor()
     }
 }
 

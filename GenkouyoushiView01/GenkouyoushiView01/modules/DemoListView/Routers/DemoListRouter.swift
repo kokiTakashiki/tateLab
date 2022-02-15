@@ -10,7 +10,7 @@ import UIKit
 
 @MainActor
 protocol DemoListRouterInput {
-    func showEditorl()
+    func showEditor()
 }
 
 @MainActor
@@ -49,7 +49,7 @@ final class DemoListRouter {
 }
 
 extension DemoListRouter: DemoListRouterInput {
-    func showEditorl() {
+    func showEditor() {
         let vc = EditorRouter.assembleModule()
         viewController.navigationController?.pushViewController(vc, animated: true)
     }

@@ -18,6 +18,7 @@
 		9A45170E27B8A4E200DA5363 /* DemoListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4516F227B6EFB300DA5363 /* DemoListViewController.storyboard */; };
 		9A45170F27B8A4EA00DA5363 /* DemoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516F827B6F5FA00DA5363 /* DemoListCollectionViewCell.swift */; };
 		9A45171027B8A4ED00DA5363 /* DemoListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A45170127B893BC00DA5363 /* DemoListCollectionViewCell.xib */; };
+		9A45171227B8B51300DA5363 /* UICollectionView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45171127B8B51300DA5363 /* UICollectionView+Animation.swift */; };
 		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
 		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
 		9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntity.swift */; };
@@ -45,6 +46,7 @@
 		9A45170127B893BC00DA5363 /* DemoListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoListCollectionViewCell.xib; sourceTree = "<group>"; };
 		9A45170527B8A36900DA5363 /* String+UIValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIValue.swift"; sourceTree = "<group>"; };
 		9A45170727B8A41B00DA5363 /* UIView+Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Material.swift"; sourceTree = "<group>"; };
+		9A45171127B8B51300DA5363 /* UICollectionView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Animation.swift"; sourceTree = "<group>"; };
 		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
 		9A7460AF27A574DC00905C75 /* EditEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntity.swift; sourceTree = "<group>"; };
@@ -164,6 +166,21 @@
 			path = UIParts;
 			sourceTree = "<group>";
 		};
+		9A45171327BA0AEE00DA5363 /* TateEditorView */ = {
+			isa = PBXGroup;
+			children = (
+				9A45171427BBA8DB00DA5363 /* Views */,
+			);
+			path = TateEditorView;
+			sourceTree = "<group>";
+		};
+		9A45171427BBA8DB00DA5363 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		9A7460A4279D9B8700905C75 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +195,7 @@
 				9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */,
 				9A45170527B8A36900DA5363 /* String+UIValue.swift */,
 				9A45170727B8A41B00DA5363 /* UIView+Material.swift */,
+				9A45171127B8B51300DA5363 /* UICollectionView+Animation.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -200,9 +218,9 @@
 		9A7460B127A5793500905C75 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				9A45171327BA0AEE00DA5363 /* TateEditorView */,
 				9A4516E127B6E8E500DA5363 /* DemoListView */,
 				9A82429D2795774200251DC1 /* EditorView */,
-				9A4516DA27B6D82C00DA5363 /* TategakiContainerView */,
 			);
 			path = modules;
 			sourceTree = "<group>";
@@ -215,6 +233,7 @@
 				9A82429F2795777B00251DC1 /* Presenters */,
 				9A8242A02795778E00251DC1 /* Routers */,
 				9A8242A12795779E00251DC1 /* Views */,
+				9A4516DA27B6D82C00DA5363 /* TategakiContainerView */,
 			);
 			path = EditorView;
 			sourceTree = "<group>";
@@ -365,6 +384,7 @@
 				9A45170B27B8A4D600DA5363 /* DemoListPresenter.swift in Sources */,
 				9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */,
 				9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */,
+				9A45171227B8B51300DA5363 /* UICollectionView+Animation.swift in Sources */,
 				9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */,
 				9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */,
 				9A45170927B8A4CE00DA5363 /* SceneDelegate.swift in Sources */,

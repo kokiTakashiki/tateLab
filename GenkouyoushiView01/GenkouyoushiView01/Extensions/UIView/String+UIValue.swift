@@ -6,6 +6,7 @@
 //
 
 extension String {
+    // MARK: ViewController Name or ID
     static var editorView: String {
         return "EditorViewController"
     }
@@ -18,6 +19,8 @@ extension String {
     static var demoListViewID: String {
         return "DemoListViewController"
     }
+    
+    // MARK: xib Name or ID
     static var demoListCollectionCell: String {
         return "DemoListCollectionViewCell"
     }
