@@ -7,15 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A4516FE27B7B84D00DA5363 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516FD27B7B84D00DA5363 /* BaseView.swift */; };
+		9A45170627B8A36900DA5363 /* String+UIValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45170527B8A36900DA5363 /* String+UIValue.swift */; };
+		9A45170827B8A41B00DA5363 /* UIView+Material.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45170727B8A41B00DA5363 /* UIView+Material.swift */; };
+		9A45170927B8A4CE00DA5363 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0872786C3BD00877ABE /* SceneDelegate.swift */; };
+		9A45170A27B8A4D300DA5363 /* DemoListEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516E827B6E9DF00DA5363 /* DemoListEntity.swift */; };
+		9A45170B27B8A4D600DA5363 /* DemoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516EA27B6EB5A00DA5363 /* DemoListPresenter.swift */; };
+		9A45170C27B8A4D800DA5363 /* DemoListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516EC27B6EC8000DA5363 /* DemoListRouter.swift */; };
+		9A45170D27B8A4DE00DA5363 /* DemoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516E527B6E94000DA5363 /* DemoListViewController.swift */; };
+		9A45170E27B8A4E200DA5363 /* DemoListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A4516F227B6EFB300DA5363 /* DemoListViewController.storyboard */; };
+		9A45170F27B8A4EA00DA5363 /* DemoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516F827B6F5FA00DA5363 /* DemoListCollectionViewCell.swift */; };
+		9A45171027B8A4ED00DA5363 /* DemoListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A45170127B893BC00DA5363 /* DemoListCollectionViewCell.xib */; };
 		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
 		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
-		9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntitiy.swift */; };
+		9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntity.swift */; };
 		9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */; };
 		9A7460C127A67F8700905C75 /* TategakiContainerRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */; };
 		9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */; };
 		9A8242A32796C5DA00251DC1 /* EditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8242A22796C5DA00251DC1 /* EditorPresenter.swift */; };
 		9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0852786C3BD00877ABE /* AppDelegate.swift */; };
-		9ACCD0882786C3BD00877ABE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0872786C3BD00877ABE /* SceneDelegate.swift */; };
 		9ACCD08A2786C3BD00877ABE /* EditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACCD0892786C3BD00877ABE /* EditorViewController.swift */; };
 		9ACCD08D2786C3BD00877ABE /* EditorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */; };
 		9ACCD08F2786C3BF00877ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ACCD08E2786C3BF00877ABE /* Assets.xcassets */; };
@@ -25,9 +35,19 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9A4516E527B6E94000DA5363 /* DemoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListViewController.swift; sourceTree = "<group>"; };
+		9A4516E827B6E9DF00DA5363 /* DemoListEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListEntity.swift; sourceTree = "<group>"; };
+		9A4516EA27B6EB5A00DA5363 /* DemoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListPresenter.swift; sourceTree = "<group>"; };
+		9A4516EC27B6EC8000DA5363 /* DemoListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListRouter.swift; sourceTree = "<group>"; };
+		9A4516F127B6EFB300DA5363 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DemoListViewController.storyboard; sourceTree = "<group>"; };
+		9A4516F827B6F5FA00DA5363 /* DemoListCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoListCollectionViewCell.swift; sourceTree = "<group>"; };
+		9A4516FD27B7B84D00DA5363 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		9A45170127B893BC00DA5363 /* DemoListCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DemoListCollectionViewCell.xib; sourceTree = "<group>"; };
+		9A45170527B8A36900DA5363 /* String+UIValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIValue.swift"; sourceTree = "<group>"; };
+		9A45170727B8A41B00DA5363 /* UIView+Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Material.swift"; sourceTree = "<group>"; };
 		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
-		9A7460AF27A574DC00905C75 /* EditEntitiy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntitiy.swift; sourceTree = "<group>"; };
+		9A7460AF27A574DC00905C75 /* EditEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntity.swift; sourceTree = "<group>"; };
 		9A7460BE27A594A900905C75 /* TategakiContainerPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerPresenter.swift; sourceTree = "<group>"; };
 		9A7460C027A67F8700905C75 /* TategakiContainerRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerRouter.swift; sourceTree = "<group>"; };
 		9A82429B278745D800251DC1 /* TategakiContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiContainerViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +110,60 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		9A4516E127B6E8E500DA5363 /* DemoListView */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516E727B6E9BC00DA5363 /* Entities */,
+				9A4516E427B6E91000DA5363 /* Presenters */,
+				9A4516E327B6E90600DA5363 /* Routers */,
+				9A4516E227B6E8FB00DA5363 /* Views */,
+			);
+			path = DemoListView;
+			sourceTree = "<group>";
+		};
+		9A4516E227B6E8FB00DA5363 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516E527B6E94000DA5363 /* DemoListViewController.swift */,
+				9A4516F227B6EFB300DA5363 /* DemoListViewController.storyboard */,
+				9A4516F827B6F5FA00DA5363 /* DemoListCollectionViewCell.swift */,
+				9A45170127B893BC00DA5363 /* DemoListCollectionViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A4516E327B6E90600DA5363 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516EC27B6EC8000DA5363 /* DemoListRouter.swift */,
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9A4516E427B6E91000DA5363 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516EA27B6EB5A00DA5363 /* DemoListPresenter.swift */,
+			);
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9A4516E727B6E9BC00DA5363 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516E827B6E9DF00DA5363 /* DemoListEntity.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		9A4516FC27B7B83C00DA5363 /* UIParts */ = {
+			isa = PBXGroup;
+			children = (
+				9A4516FD27B7B84D00DA5363 /* BaseView.swift */,
+			);
+			path = UIParts;
+			sourceTree = "<group>";
+		};
 		9A7460A4279D9B8700905C75 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */,
+				9A45170527B8A36900DA5363 /* String+UIValue.swift */,
+				9A45170727B8A41B00DA5363 /* UIView+Material.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -116,7 +192,7 @@
 		9A7460AE27A5741B00905C75 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				9A7460AF27A574DC00905C75 /* EditEntitiy.swift */,
+				9A7460AF27A574DC00905C75 /* EditEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -124,6 +200,7 @@
 		9A7460B127A5793500905C75 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				9A4516E127B6E8E500DA5363 /* DemoListView */,
 				9A82429D2795774200251DC1 /* EditorView */,
 				9A4516DA27B6D82C00DA5363 /* TategakiContainerView */,
 			);
@@ -199,6 +276,7 @@
 				9A7460A4279D9B8700905C75 /* Extensions */,
 				9A7460B127A5793500905C75 /* modules */,
 				9A7460A827A0F3F900905C75 /* Repository */,
+				9A4516FC27B7B83C00DA5363 /* UIParts */,
 				9ACCD08E2786C3BF00877ABE /* Assets.xcassets */,
 				9ACCD0902786C3BF00877ABE /* LaunchScreen.storyboard */,
 				9ACCD0932786C3BF00877ABE /* Info.plist */,
@@ -268,9 +346,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A45170E27B8A4E200DA5363 /* DemoListViewController.storyboard in Resources */,
 				9ACCD0922786C3BF00877ABE /* LaunchScreen.storyboard in Resources */,
 				9ACCD08F2786C3BF00877ABE /* Assets.xcassets in Resources */,
 				9ACCD08D2786C3BD00877ABE /* EditorViewController.storyboard in Resources */,
+				9A45171027B8A4ED00DA5363 /* DemoListCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,16 +362,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ACCD08A2786C3BD00877ABE /* EditorViewController.swift in Sources */,
+				9A45170B27B8A4D600DA5363 /* DemoListPresenter.swift in Sources */,
 				9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */,
 				9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */,
 				9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */,
 				9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */,
+				9A45170927B8A4CE00DA5363 /* SceneDelegate.swift in Sources */,
 				9ACCD09A2786C3D400877ABE /* TategakiView.swift in Sources */,
-				9ACCD0882786C3BD00877ABE /* SceneDelegate.swift in Sources */,
+				9A45170827B8A41B00DA5363 /* UIView+Material.swift in Sources */,
 				9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */,
 				9AF7A39B279D7F5500484C37 /* EditorRouter.swift in Sources */,
-				9A7460B027A574DC00905C75 /* EditEntitiy.swift in Sources */,
+				9A45170627B8A36900DA5363 /* String+UIValue.swift in Sources */,
+				9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */,
 				9A7460C127A67F8700905C75 /* TategakiContainerRouter.swift in Sources */,
+				9A45170F27B8A4EA00DA5363 /* DemoListCollectionViewCell.swift in Sources */,
+				9A45170A27B8A4D300DA5363 /* DemoListEntity.swift in Sources */,
+				9A45170C27B8A4D800DA5363 /* DemoListRouter.swift in Sources */,
+				9A45170D27B8A4DE00DA5363 /* DemoListViewController.swift in Sources */,
+				9A4516FE27B7B84D00DA5363 /* BaseView.swift in Sources */,
 				9A8242A32796C5DA00251DC1 /* EditorPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -299,6 +387,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		9A4516F227B6EFB300DA5363 /* DemoListViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A4516F127B6EFB300DA5363 /* Base */,
+			);
+			name = DemoListViewController.storyboard;
+			sourceTree = "<group>";
+		};
 		9ACCD08B2786C3BD00877ABE /* EditorViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -447,6 +543,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = EditorViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +572,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = EditorViewController;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationLandscapeLeft;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

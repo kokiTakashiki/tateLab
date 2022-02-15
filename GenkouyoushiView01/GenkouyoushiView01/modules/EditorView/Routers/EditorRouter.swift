@@ -10,7 +10,7 @@ import UIKit
 
 @MainActor
 protocol EditorRouterInput {
-    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) -> TategakiContainerPresenter
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntity) -> TategakiContainerPresenter
 }
 
 @MainActor
@@ -32,7 +32,7 @@ final class EditorRouter {
 //            fatalError("Fail to load MonsterListViewController from Storyboard.")
 //        }
         let controller = UIViewController()
-        guard let view = controller.instantiateStoryBoardToViewController(storyBoardName: UIViewController.editorView, withIdentifier: UIViewController.editorViewID) as? EditorViewController else {
+        guard let view = controller.instantiateStoryBoardToViewController(storyBoardName: .editorView, withIdentifier: .editorViewID) as? EditorViewController else {
             fatalError("Fail to load EditorViewController from Storyboard.")
         }
         let interactor = EditorInteractor()
@@ -49,7 +49,7 @@ final class EditorRouter {
 }
 
 extension EditorRouter: EditorRouterInput {
-    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntitiy) -> TategakiContainerPresenter {
+    func prepareTategakiContainer(containerView: TategakiContainerViewController, editData: EditEntity) -> TategakiContainerPresenter {
         let result = TategakiContainerRouter.assembleModule(seguePrepareView: containerView, editData: editData)
         return result
     }

@@ -9,7 +9,7 @@ import UIKit
 
 @MainActor
 protocol TategakiContainerUserInterface: AnyObject {
-    func updateText(editData: EditEntitiy)
+    func updateText(editData: EditEntity)
 }
 
 @MainActor
@@ -21,7 +21,7 @@ final class TategakiContainerViewController: UIViewController {
     
     private var presenter: TategakiContainerEventHandler!
     
-    private var editData: EditEntitiy!
+    private var editData: EditEntity!
 
     // MARK: Computed Instance Properties
 
@@ -53,7 +53,7 @@ final class TategakiContainerViewController: UIViewController {
 
     func inject(
         presenter: TategakiContainerEventHandler,
-        editData: EditEntitiy
+        editData: EditEntity
         //logger: LoggerProtocol = Logger.default
     ) {
         self.presenter = presenter
@@ -65,7 +65,7 @@ final class TategakiContainerViewController: UIViewController {
 }
 
 extension TategakiContainerViewController: TategakiContainerUserInterface {
-    func updateText(editData: EditEntitiy) {
+    func updateText(editData: EditEntity) {
         tategakiView.text = editData.content
         tategakiView.setNeedsDisplay()
     }

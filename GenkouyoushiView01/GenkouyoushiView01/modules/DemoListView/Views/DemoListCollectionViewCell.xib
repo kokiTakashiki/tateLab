@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DemoListCollectionViewCell" id="BKg-7g-n5S" customClass="DemoListCollectionViewCell" customModule="GenkouyoushiView01" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="304" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="304" height="116"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IiK-EV-V3B" customClass="BaseView" customModule="GenkouyoushiView01" customModuleProvider="target">
+                        <rect key="frame" x="8" y="8" width="288" height="100"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuM-Kk-q7h">
+                                <rect key="frame" x="118.5" y="33" width="51" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LuM-Kk-q7h" firstAttribute="centerX" secondItem="IiK-EV-V3B" secondAttribute="centerX" id="UKg-Ec-2V8"/>
+                            <constraint firstItem="LuM-Kk-q7h" firstAttribute="centerY" secondItem="IiK-EV-V3B" secondAttribute="centerY" id="p3G-6G-MSa"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="4wq-cU-eBP"/>
+            <constraints>
+                <constraint firstItem="IiK-EV-V3B" firstAttribute="top" secondItem="BKg-7g-n5S" secondAttribute="top" constant="8" id="36a-pb-dOp"/>
+                <constraint firstAttribute="trailing" secondItem="IiK-EV-V3B" secondAttribute="trailing" constant="8" id="e9S-gJ-J0a"/>
+                <constraint firstItem="IiK-EV-V3B" firstAttribute="leading" secondItem="BKg-7g-n5S" secondAttribute="leading" constant="8" id="i1P-eh-hTi"/>
+                <constraint firstAttribute="bottom" secondItem="IiK-EV-V3B" secondAttribute="bottom" constant="8" id="uAh-4x-2DX"/>
+            </constraints>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="masksToBounds" value="NO"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="baseView" destination="IiK-EV-V3B" id="P6C-8h-RXS"/>
+                <outlet property="titleLabel" destination="LuM-Kk-q7h" id="3ZT-gf-hHt"/>
+            </connections>
+            <point key="canvasLocation" x="-136.23188405797103" y="-41.517857142857139"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

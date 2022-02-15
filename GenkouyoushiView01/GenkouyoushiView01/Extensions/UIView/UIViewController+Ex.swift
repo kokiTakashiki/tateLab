@@ -15,18 +15,3 @@ extension UIViewController {
         return viewController
     }
 }
-
-extension UIViewController {
-    class var editorView: String {
-        return "EditorViewController"
-    }
-    class var editorViewID: String {
-        return "EditorViewController"
-    }
-    class var tategakiContainerView: String {
-        return "TategakiContainerViewController"
-    }
-    class var tategakiContainerViewID: String {
-        return "TategakiContainerViewController"
-    }
-}
