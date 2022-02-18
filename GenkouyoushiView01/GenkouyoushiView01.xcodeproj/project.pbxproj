@@ -19,6 +19,7 @@
 		9A45170F27B8A4EA00DA5363 /* DemoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516F827B6F5FA00DA5363 /* DemoListCollectionViewCell.swift */; };
 		9A45171027B8A4ED00DA5363 /* DemoListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A45170127B893BC00DA5363 /* DemoListCollectionViewCell.xib */; };
 		9A45171227B8B51300DA5363 /* UICollectionView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45171127B8B51300DA5363 /* UICollectionView+Animation.swift */; };
+		9A5CE8E927BFF556008D75A4 /* TateEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8E827BFF556008D75A4 /* TateEditorViewController.swift */; };
 		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
 		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
 		9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntity.swift */; };
@@ -47,6 +48,7 @@
 		9A45170527B8A36900DA5363 /* String+UIValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIValue.swift"; sourceTree = "<group>"; };
 		9A45170727B8A41B00DA5363 /* UIView+Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Material.swift"; sourceTree = "<group>"; };
 		9A45171127B8B51300DA5363 /* UICollectionView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Animation.swift"; sourceTree = "<group>"; };
+		9A5CE8E827BFF556008D75A4 /* TateEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditorViewController.swift; sourceTree = "<group>"; };
 		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
 		9A7460AF27A574DC00905C75 /* EditEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntity.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 		9A45171427BBA8DB00DA5363 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A5CE8E827BFF556008D75A4 /* TateEditorViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -385,6 +388,7 @@
 				9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */,
 				9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */,
 				9A45171227B8B51300DA5363 /* UICollectionView+Animation.swift in Sources */,
+				9A5CE8E927BFF556008D75A4 /* TateEditorViewController.swift in Sources */,
 				9ACCD0862786C3BD00877ABE /* AppDelegate.swift in Sources */,
 				9A7460BF27A594A900905C75 /* TategakiContainerPresenter.swift in Sources */,
 				9A45170927B8A4CE00DA5363 /* SceneDelegate.swift in Sources */,
