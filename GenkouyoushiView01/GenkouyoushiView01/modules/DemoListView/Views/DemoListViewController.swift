@@ -98,7 +98,7 @@ extension DemoListViewController: UICollectionViewDelegate {
         Task {
             let data = collectionData[indexPath.row]
             //await presenter.didSelectMonster(monster: monster)
-            await presenter.didSelectDemo()
+            await presenter.didSelectDemo(data)
         }
     }
 
