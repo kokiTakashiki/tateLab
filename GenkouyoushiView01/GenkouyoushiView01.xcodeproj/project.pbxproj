@@ -23,6 +23,9 @@
 		9A5CE8EC27C09836008D75A4 /* TateEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8EB27C09836008D75A4 /* TateEditorPresenter.swift */; };
 		9A5CE8EF27C09C83008D75A4 /* TateEditorRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8EE27C09C83008D75A4 /* TateEditorRouters.swift */; };
 		9A5CE8F127C09DB8008D75A4 /* TateEditorViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CE8F027C09DB8008D75A4 /* TateEditorViewController.storyboard */; };
+		9A5CE8F327C0B13E008D75A4 /* TategakiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8F227C0B13E008D75A4 /* TategakiTextView.swift */; };
+		9A5CE8F527C0D4DC008D75A4 /* Sample.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CE8F427C0D4DC008D75A4 /* Sample.rtf */; };
+		9A5CE8F727C0D5F5008D75A4 /* TategakiLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8F627C0D5F5008D75A4 /* TategakiLayoutManager.swift */; };
 		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
 		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
 		9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntity.swift */; };
@@ -55,6 +58,9 @@
 		9A5CE8EB27C09836008D75A4 /* TateEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditorPresenter.swift; sourceTree = "<group>"; };
 		9A5CE8EE27C09C83008D75A4 /* TateEditorRouters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditorRouters.swift; sourceTree = "<group>"; };
 		9A5CE8F027C09DB8008D75A4 /* TateEditorViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TateEditorViewController.storyboard; sourceTree = "<group>"; };
+		9A5CE8F227C0B13E008D75A4 /* TategakiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiTextView.swift; sourceTree = "<group>"; };
+		9A5CE8F427C0D4DC008D75A4 /* Sample.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Sample.rtf; sourceTree = "<group>"; };
+		9A5CE8F627C0D5F5008D75A4 /* TategakiLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiLayoutManager.swift; sourceTree = "<group>"; };
 		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
 		9A7460AF27A574DC00905C75 /* EditEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntity.swift; sourceTree = "<group>"; };
@@ -189,6 +195,8 @@
 			children = (
 				9A5CE8E827BFF556008D75A4 /* TateEditorViewController.swift */,
 				9A5CE8F027C09DB8008D75A4 /* TateEditorViewController.storyboard */,
+				9A5CE8F227C0B13E008D75A4 /* TategakiTextView.swift */,
+				9A5CE8F627C0D5F5008D75A4 /* TategakiLayoutManager.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -207,6 +215,13 @@
 				9A5CE8EE27C09C83008D75A4 /* TateEditorRouters.swift */,
 			);
 			path = Routers;
+			sourceTree = "<group>";
+		};
+		9A5CE8F827C0F547008D75A4 /* FlipEditorView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = FlipEditorView;
 			sourceTree = "<group>";
 		};
 		9A7460A4279D9B8700905C75 /* Extensions */ = {
@@ -246,6 +261,7 @@
 		9A7460B127A5793500905C75 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				9A5CE8F827C0F547008D75A4 /* FlipEditorView */,
 				9A4516E127B6E8E500DA5363 /* DemoListView */,
 				9A45171327BA0AEE00DA5363 /* TateEditorView */,
 				9A82429D2795774200251DC1 /* EditorView */,
@@ -327,6 +343,7 @@
 				9ACCD08E2786C3BF00877ABE /* Assets.xcassets */,
 				9ACCD0902786C3BF00877ABE /* LaunchScreen.storyboard */,
 				9ACCD0932786C3BF00877ABE /* Info.plist */,
+				9A5CE8F427C0D4DC008D75A4 /* Sample.rtf */,
 			);
 			path = GenkouyoushiView01;
 			sourceTree = "<group>";
@@ -394,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A45170E27B8A4E200DA5363 /* DemoListViewController.storyboard in Resources */,
+				9A5CE8F527C0D4DC008D75A4 /* Sample.rtf in Resources */,
 				9ACCD0922786C3BF00877ABE /* LaunchScreen.storyboard in Resources */,
 				9A5CE8F127C09DB8008D75A4 /* TateEditorViewController.storyboard in Resources */,
 				9ACCD08F2786C3BF00877ABE /* Assets.xcassets in Resources */,
@@ -410,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ACCD08A2786C3BD00877ABE /* EditorViewController.swift in Sources */,
+				9A5CE8F727C0D5F5008D75A4 /* TategakiLayoutManager.swift in Sources */,
 				9A45170B27B8A4D600DA5363 /* DemoListPresenter.swift in Sources */,
 				9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */,
 				9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */,
@@ -422,6 +441,7 @@
 				9A45170827B8A41B00DA5363 /* UIView+Material.swift in Sources */,
 				9A5CE8EF27C09C83008D75A4 /* TateEditorRouters.swift in Sources */,
 				9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */,
+				9A5CE8F327C0B13E008D75A4 /* TategakiTextView.swift in Sources */,
 				9AF7A39B279D7F5500484C37 /* EditorRouter.swift in Sources */,
 				9A45170627B8A36900DA5363 /* String+UIValue.swift in Sources */,
 				9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */,

@@ -3,10 +3,10 @@ import UIKit
 class UITextViewWithoutMenu: UITextView {
     
     override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
-        
+
         return true
     }
-    
+
     var scale: CGFloat = 1
 
     public override func draw(_ rect: CGRect) {
@@ -50,35 +50,35 @@ public class UIMongolTextView: UIView {
     // ********* Unique to TextView *********
     fileprivate var view = UITextViewWithoutMenu()
     fileprivate let rotationView = UIView()
-    fileprivate var userInteractionEnabledForSubviews = true
-    fileprivate let mongolFontName = "NotoSansJP-Regular-Tate"
+    //fileprivate var userInteractionEnabledForSubviews = true
+    //fileprivate let mongolFontName = "NotoSansJP-Regular-Tate"
     fileprivate let defaultFontSize: CGFloat = 17
-    fileprivate let mongolTextStorage = MongolTextStorage()
+    //fileprivate let mongolTextStorage = MongolTextStorage()
     
     var text: String {
         get {
-            //return view.text
-            return mongolTextStorage.unicode
+            return view.text
+            //return mongolTextStorage.unicode
         }
         set {
-            mongolTextStorage.unicode = newValue
-            view.text = mongolTextStorage.render()
-            //view.text = newValue
+            //mongolTextStorage.unicode = newValue
+            //view.text = mongolTextStorage.render()
+            view.text = newValue
         }
     }
     
-    var fontSize: CGFloat {
-        get {
-            if let font = view.font {
-                return font.pointSize
-            } else {
-                return 0.0
-            }
-        }
-        set {
-            view.font = UIFont(name: mongolFontName, size: newValue)
-        }
-    }
+//    var fontSize: CGFloat {
+//        get {
+//            if let font = view.font {
+//                return font.pointSize
+//            } else {
+//                return 0.0
+//            }
+//        }
+//        set {
+//            view.font = UIFont(name: mongolFontName, size: newValue)
+//        }
+//    }
     
     var textColor: UIColor {
         get {
@@ -180,127 +180,127 @@ public class UIMongolTextView: UIView {
         return CGSize(width: fitSize.height, height: fitSize.width)
     }
     
-    func selectedText() -> String? {
-        
-        // TODO: this could give error if selected range has emoji
-        
-        // get the current selected range / cursor position
-        guard let selection = view.selectedTextRange else {
-            return nil
-        }
-        
-        // get caret or selected range
-        // "view.selectedRange" may be easier but use method below as a first step for future emoji support
-        let startGlyphIndex = view.offset(from: view.beginningOfDocument, to: selection.start)
-        let length = view.offset(from: selection.start, to: selection.end)
-        let selectedRange = NSRange(location: startGlyphIndex, length: length)
-        
-        // insert or replace selection with unicode
-        return mongolTextStorage.unicodeForGlyphRange(selectedRange)
-    }
+//    func selectedText() -> String? {
+//
+//        // TODO: this could give error if selected range has emoji
+//
+//        // get the current selected range / cursor position
+//        guard let selection = view.selectedTextRange else {
+//            return nil
+//        }
+//
+//        // get caret or selected range
+//        // "view.selectedRange" may be easier but use method below as a first step for future emoji support
+//        let startGlyphIndex = view.offset(from: view.beginningOfDocument, to: selection.start)
+//        let length = view.offset(from: selection.start, to: selection.end)
+//        let selectedRange = NSRange(location: startGlyphIndex, length: length)
+//
+//        // insert or replace selection with unicode
+//        return mongolTextStorage.unicodeForGlyphRange(selectedRange)
+//    }
     
-    func insertMongolText(_ unicode: String) {
-        
-        // get the current selected range / cursor position
-        // TODO: this could give error if selected range has emoji
-        if let selection = view.selectedTextRange {
-            
-            // get caret or selected range
-            // "view.selectedRange" may be easier but use method below as a first step for future emoji support
-            let startGlyphIndex = view.offset(from: view.beginningOfDocument, to: selection.start)
-            let length = view.offset(from: selection.start, to: selection.end)
-            let selectedRange = NSRange(location: startGlyphIndex, length: length)
-            
-            // insert or replace selection with unicode
-            mongolTextStorage.insertUnicodeForGlyphRange(selectedRange, unicodeToInsert: unicode)
-            
-            // render unicode again
-            // FIXME: It is inefficient and unnesessary to render everything
-            view.text = mongolTextStorage.render()
-            
-            // set caret position
-            if let newPosition = view.position(from: view.beginningOfDocument, in: UITextLayoutDirection.right, offset: mongolTextStorage.glyphIndexForCursor) {
-                
-                view.selectedTextRange = view.textRange(from: newPosition, to: newPosition)
-            }
-        }
-        
-    }
+//    func insertMongolText(_ unicode: String) {
+//
+//        // get the current selected range / cursor position
+//        // TODO: this could give error if selected range has emoji
+//        if let selection = view.selectedTextRange {
+//
+//            // get caret or selected range
+//            // "view.selectedRange" may be easier but use method below as a first step for future emoji support
+//            let startGlyphIndex = view.offset(from: view.beginningOfDocument, to: selection.start)
+//            let length = view.offset(from: selection.start, to: selection.end)
+//            let selectedRange = NSRange(location: startGlyphIndex, length: length)
+//
+//            // insert or replace selection with unicode
+//            mongolTextStorage.insertUnicodeForGlyphRange(selectedRange, unicodeToInsert: unicode)
+//
+//            // render unicode again
+//            // FIXME: It is inefficient and unnesessary to render everything
+//            view.text = mongolTextStorage.render()
+//
+//            // set caret position
+//            if let newPosition = view.position(from: view.beginningOfDocument, in: UITextLayoutDirection.right, offset: mongolTextStorage.glyphIndexForCursor) {
+//
+//                view.selectedTextRange = view.textRange(from: newPosition, to: newPosition)
+//            }
+//        }
+//
+//    }
     
-    func replaceWordAtCursorWith(_ replacementString: String) {
-        // get the cursor position
-        if let cursorRange = view.selectedTextRange {
-            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
-            mongolTextStorage.replaceWordAtCursorWith(replacementString, atGlyphIndex: cursorPosition)
-            // render unicode again
-            // FIXME: It is inefficient and unnesessary to render everything
-            view.text = mongolTextStorage.render()
-            
-            // set caret position
-            if let newPosition = view.position(from: view.beginningOfDocument, in: UITextLayoutDirection.right, offset: mongolTextStorage.glyphIndexForCursor) {
-                
-                view.selectedTextRange = view.textRange(from: newPosition, to: newPosition)
-            }
-        }
-    }
+//    func replaceWordAtCursorWith(_ replacementString: String) {
+//        // get the cursor position
+//        if let cursorRange = view.selectedTextRange {
+//            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
+//            mongolTextStorage.replaceWordAtCursorWith(replacementString, atGlyphIndex: cursorPosition)
+//            // render unicode again
+//            // FIXME: It is inefficient and unnesessary to render everything
+//            view.text = mongolTextStorage.render()
+//
+//            // set caret position
+//            if let newPosition = view.position(from: view.beginningOfDocument, in: UITextLayoutDirection.right, offset: mongolTextStorage.glyphIndexForCursor) {
+//
+//                view.selectedTextRange = view.textRange(from: newPosition, to: newPosition)
+//            }
+//        }
+//    }
     
-    func deleteBackward() {
-        
-        // get the current selected range / cursor position
-        // TODO: this could give error if selected range has emoji
-        if let selection = view.selectedTextRange {
-            
-            // get caret or selected range
-            // "view.selectedRange" may be easier but use method below as a first step for future emoji support
-            let startGlyphIndex = view.offset(from: view.beginningOfDocument, to: selection.start)
-            let length = view.offset(from: selection.start, to: selection.end)
-            let selectedRange = NSRange(location: startGlyphIndex, length: length)
-            
-            // delete unicode backward
-            mongolTextStorage.deleteBackwardsAtGlyphRange(selectedRange)
-            
-            
-            // render unicode again
-            // FIXME: It is inefficient and unnesessary to render everything
-            view.text = mongolTextStorage.render()
-            
-            // set caret position
-            if let newPosition = view.position(from: view.beginningOfDocument, in: UITextLayoutDirection.right, offset: mongolTextStorage.glyphIndexForCursor) {
-                
-                view.selectedTextRange = view.textRange(from: newPosition, to: newPosition)
-            }
-        }
-    }
+//    func deleteBackward() {
+//
+//        // get the current selected range / cursor position
+//        // TODO: this could give error if selected range has emoji
+//        if let selection = view.selectedTextRange {
+//
+//            // get caret or selected range
+//            // "view.selectedRange" may be easier but use method below as a first step for future emoji support
+//            let startGlyphIndex = view.offset(from: view.beginningOfDocument, to: selection.start)
+//            let length = view.offset(from: selection.start, to: selection.end)
+//            let selectedRange = NSRange(location: startGlyphIndex, length: length)
+//
+//            // delete unicode backward
+//            mongolTextStorage.deleteBackwardsAtGlyphRange(selectedRange)
+//
+//
+//            // render unicode again
+//            // FIXME: It is inefficient and unnesessary to render everything
+//            view.text = mongolTextStorage.render()
+//
+//            // set caret position
+//            if let newPosition = view.position(from: view.beginningOfDocument, in: UITextLayoutDirection.right, offset: mongolTextStorage.glyphIndexForCursor) {
+//
+//                view.selectedTextRange = view.textRange(from: newPosition, to: newPosition)
+//            }
+//        }
+//    }
     
-    func unicodeCharBeforeCursor() -> String? {
-        
-        // get the cursor position
-        if let cursorRange = view.selectedTextRange {
-            
-            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
-            return mongolTextStorage.unicodeCharBeforeCursor(cursorPosition)
-        }
-        return nil
-    }
-    
-    func oneMongolWordBeforeCursor() -> String? {
-        // get the cursor position
-        if let cursorRange = view.selectedTextRange {
-            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
-            return mongolTextStorage.unicodeOneWordBeforeCursor(cursorPosition)
-        }
-        return nil
-    }
-    
-    func twoMongolWordsBeforeCursor() -> (String?, String?) {
-        // get the cursor position
-        if let cursorRange = view.selectedTextRange {
-            
-            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
-            return mongolTextStorage.unicodeTwoWordsBeforeCursor(cursorPosition)
-        }
-        return (nil, nil)
-    }
+//    func unicodeCharBeforeCursor() -> String? {
+//
+//        // get the cursor position
+//        if let cursorRange = view.selectedTextRange {
+//
+//            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
+//            return mongolTextStorage.unicodeCharBeforeCursor(cursorPosition)
+//        }
+//        return nil
+//    }
+//
+//    func oneMongolWordBeforeCursor() -> String? {
+//        // get the cursor position
+//        if let cursorRange = view.selectedTextRange {
+//            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
+//            return mongolTextStorage.unicodeOneWordBeforeCursor(cursorPosition)
+//        }
+//        return nil
+//    }
+//
+//    func twoMongolWordsBeforeCursor() -> (String?, String?) {
+//        // get the cursor position
+//        if let cursorRange = view.selectedTextRange {
+//
+//            let cursorPosition = view.offset(from: view.beginningOfDocument, to: cursorRange.start)
+//            return mongolTextStorage.unicodeTwoWordsBeforeCursor(cursorPosition)
+//        }
+//        return (nil, nil)
+//    }
     
     
     
@@ -309,7 +309,7 @@ public class UIMongolTextView: UIView {
         
         // FIXME: UI related settings should go in LayoutSubviews
         //view.backgroundColor = UIColor.yellowColor()
-        rotationView.isUserInteractionEnabled = userInteractionEnabledForSubviews
+        //rotationView.isUserInteractionEnabled = userInteractionEnabledForSubviews
         
         self.view.translatesAutoresizingMaskIntoConstraints = false
         
@@ -329,7 +329,7 @@ public class UIMongolTextView: UIView {
 //
 //            view.font = UIFont(name: mongolFontName, size: defaultFontSize)
 //        }
-        view.font = UIFont(name: mongolFontName, size: defaultFontSize)
+        //view.font = UIFont(name: mongolFontName, size: defaultFontSize)
         //let layoutManager = tategakiLayoutManager()
         //view.textContainer.replaceLayoutManager(layoutManager)
     }

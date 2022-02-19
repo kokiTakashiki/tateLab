@@ -15,9 +15,24 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="1133" height="744"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aHT-cG-Em3" customClass="TategakiTextView" customModule="GenkouyoushiView01" customModuleProvider="target">
+                                <rect key="frame" x="20" y="44" width="1093" height="660"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aHT-cG-Em3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="fPs-4Q-F4m"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aHT-cG-Em3" secondAttribute="bottom" constant="20" id="oRw-BR-6w9"/>
+                            <constraint firstItem="aHT-cG-Em3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="uxF-Ab-AdY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aHT-cG-Em3" secondAttribute="trailing" constant="20" id="zfA-i8-5kD"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textView" destination="aHT-cG-Em3" id="XCM-xh-dIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

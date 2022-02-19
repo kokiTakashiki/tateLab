@@ -25,12 +25,14 @@ final class TateEditorViewController: UIViewController {
     // MARK: Computed Instance Properties
 
     // MARK: IBOutlets
+    @IBOutlet weak var textView: TategakiTextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         //editData = TateEditEntity(title: "test", description: "2022/01/29", content: textView.text)
+        textView.text = "あああああああ"
         
         Task {
             await presenter.viewDidLoad()
