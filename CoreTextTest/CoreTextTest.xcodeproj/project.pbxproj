@@ -13,7 +13,6 @@
 		9AC61835268B5FF70066C008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC61833268B5FF70066C008 /* Main.storyboard */; };
 		9AC61837268B5FF80066C008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AC61836268B5FF80066C008 /* Assets.xcassets */; };
 		9AC6183A268B5FF80066C008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AC61838268B5FF80066C008 /* LaunchScreen.storyboard */; };
-		9AC61844268B65220066C008 /* TategakiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61843268B65220066C008 /* TategakiView.swift */; };
 		9AC61846268B67D10066C008 /* TategakiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61845268B67D10066C008 /* TategakiTextView.swift */; };
 		9AC618482690035D0066C008 /* VerticalTextView2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC618472690035D0066C008 /* VerticalTextView2.swift */; };
 		9ACCD072278554D600877ABE /* VerticalTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AC61841268B60230066C008 /* VerticalTextView.swift */; };
@@ -158,7 +157,6 @@
 				9AC61832268B5FF70066C008 /* ViewController.swift in Sources */,
 				9AC61846268B67D10066C008 /* TategakiTextView.swift in Sources */,
 				9AC6182E268B5FF70066C008 /* AppDelegate.swift in Sources */,
-				9AC61844268B65220066C008 /* TategakiView.swift in Sources */,
 				9AC61830268B5FF70066C008 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

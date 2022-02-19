@@ -8,6 +8,7 @@
 import UIKit
 
 protocol DemoListUserInterface: AnyObject {
+    func updateDemoList(_ demoList: [DemoListEntity])
 }
 
 final class DemoListViewController: UIViewController {
@@ -25,8 +26,6 @@ final class DemoListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        collectionData.append(DemoListEntity(title: "test", description: "test"))
         
         Task {
             await presenter.viewDidLoad()
@@ -99,11 +98,16 @@ extension DemoListViewController: UICollectionViewDelegate {
         Task {
             let data = collectionData[indexPath.row]
             //await presenter.didSelectMonster(monster: monster)
-            await presenter.didSelectDemo()
+            await presenter.didSelectDemo(data)
         }
     }
 
 }
 
 extension DemoListViewController: DemoListUserInterface {
+    func updateDemoList(_ demoList: [DemoListEntity]) {
+        self.collectionData = demoList
+        demoListCollectionView.reloadData()
+        demoListCollectionView.executeCellSlideUpAnimation()
+    }
 }

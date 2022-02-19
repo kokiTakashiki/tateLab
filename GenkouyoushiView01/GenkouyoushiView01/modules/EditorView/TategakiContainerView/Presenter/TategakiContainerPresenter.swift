@@ -47,11 +47,11 @@ final class TategakiContainerPresenter {
 
 extension TategakiContainerPresenter: TategakiContainerEventHandler {
     func viewDidLoad() async {
-        do {
-            
-        } catch {
-            // TODO: エラーハンドリング
-        }
+//        do {
+//            
+//        } catch {
+//            // TODO: エラーハンドリング
+//        }
     }
     
     func updateTategakiViewText(content: EditEntity) async {

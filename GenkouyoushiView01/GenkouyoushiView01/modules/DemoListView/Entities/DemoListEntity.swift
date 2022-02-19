@@ -8,10 +8,17 @@
 import Foundation
 
 struct DemoListEntity: Equatable {
+    var listID: DemoListID = .none
     var title: String
     var description: String
 }
 
-extension DemoListEntity: Codable {}
+extension DemoListEntity: Codable {
+    enum DemoListID:String,Codable{
+        case none
+        case tateContainer
+        case tateTextView
+    }
+}
 
 extension DemoListEntity: Sendable {}

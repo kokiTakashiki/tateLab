@@ -10,7 +10,7 @@ import Foundation
 @MainActor
 protocol DemoListEventHandler: AnyObject {
     func viewDidLoad() async
-    func didSelectDemo() async
+    func didSelectDemo(_ demo: DemoListEntity) async
 }
 
 protocol DemoListInteractorOutput: AnyObject {
@@ -47,14 +47,28 @@ final class DemoListPresenter {
 extension DemoListPresenter: DemoListEventHandler {
     func viewDidLoad() async {
         do {
-            
+            let demoList = [
+                DemoListEntity(listID: .tateContainer, title: "縦書きcontainer", description: "TateContainer"),
+                DemoListEntity(listID: .tateTextView, title: "縦書きtextView", description: "TateTextView")
+            ]
+            view.updateDemoList(demoList)
         } catch {
             // TODO: エラーハンドリング
         }
     }
     
-    func didSelectDemo() async {
-        router.showEditorl()
+    func didSelectDemo(_ demo: DemoListEntity) async {
+        switch demo.listID {
+        case .tateContainer:
+            router.showEditor()
+        case .tateTextView:
+            router.showTateEditor()
+        case .none:
+            print("no select view")
+        default:
+            // TODO: エラーハンドリング
+            print("no select view")
+        }
     }
 }
 
