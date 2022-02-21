@@ -33,6 +33,7 @@ final class TateEditorViewController: UIViewController {
         
         //editData = TateEditEntity(title: "test", description: "2022/01/29", content: textView.text)
         textView.text = "あああああああ"
+        textView.view.delegate = self
         
         Task {
             await presenter.viewDidLoad()
@@ -52,6 +53,14 @@ final class TateEditorViewController: UIViewController {
     }
 
     // MARK: Other Private Methods
+}
+
+extension TateEditorViewController: UITextViewDelegate {
+    func textViewDidChangeSelection(_ textView: UITextView) {
+        Task {
+            self.textView.setNeedsDisplay()
+        }
+    }
 }
 
 extension TateEditorViewController: TateEditorUserInterface {

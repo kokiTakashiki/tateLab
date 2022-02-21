@@ -217,11 +217,35 @@
 			path = Routers;
 			sourceTree = "<group>";
 		};
-		9A5CE8F827C0F547008D75A4 /* FlipEditorView */ = {
+		9A5CE8FB27C103B1008D75A4 /* TateEditorView2 */ = {
+			isa = PBXGroup;
+			children = (
+				9A5CE8FE27C3A210008D75A4 /* Presenters */,
+				9A5CE8FF27C3A248008D75A4 /* Routers */,
+				9A5CE90027C3A253008D75A4 /* Views */,
+			);
+			path = TateEditorView2;
+			sourceTree = "<group>";
+		};
+		9A5CE8FE27C3A210008D75A4 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = FlipEditorView;
+			path = Presenters;
+			sourceTree = "<group>";
+		};
+		9A5CE8FF27C3A248008D75A4 /* Routers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Routers;
+			sourceTree = "<group>";
+		};
+		9A5CE90027C3A253008D75A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		9A7460A4279D9B8700905C75 /* Extensions */ = {
@@ -261,10 +285,10 @@
 		9A7460B127A5793500905C75 /* modules */ = {
 			isa = PBXGroup;
 			children = (
-				9A5CE8F827C0F547008D75A4 /* FlipEditorView */,
 				9A4516E127B6E8E500DA5363 /* DemoListView */,
 				9A45171327BA0AEE00DA5363 /* TateEditorView */,
 				9A82429D2795774200251DC1 /* EditorView */,
+				9A5CE8FB27C103B1008D75A4 /* TateEditorView2 */,
 			);
 			path = modules;
 			sourceTree = "<group>";

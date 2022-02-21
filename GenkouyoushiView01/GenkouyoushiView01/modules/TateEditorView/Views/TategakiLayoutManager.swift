@@ -20,7 +20,21 @@ class TategakiLayoutManager: NSLayoutManager {
         
         var flip = textMatrix//CGAffineTransform(translationX: 40, y: 40)
         flip = flip.scaledBy(x: 1, y: -1)
-        flip = flip.rotated(by: CGFloat(Double.pi/2))
+        flip = flip.rotated(by: CGFloat(-Double.pi/2))
+        
+        // 行間の設定
+        let lineSpaceStyle = NSMutableParagraphStyle()
+        lineSpaceStyle.lineSpacing = -20
+        
+        var newPoint = CGPoint(x: positions.pointee.y, y: positions.pointee.x)
+        let baseAttributes: [NSAttributedString.Key : Any] = [
+            .verticalGlyphForm: true,
+            .font : UIFont.systemFont(ofSize: 15.0),
+//            NSAttributedString.Key.font: UIFont.hiraMinProN_W6(size: 25),
+            .paragraphStyle: lineSpaceStyle // 行間
+        ]
+        
+        // 枠もじを作るだけ
         let path = CTFontCreatePathForGlyph(font, glyphs.pointee, &flip)!
         CGContext.addPath(path)
         CGContext.strokePath()
@@ -29,8 +43,8 @@ class TategakiLayoutManager: NSLayoutManager {
                            positions: positions,
                            count: glyphCount,
                            font: font,
-                           textMatrix: textMatrix,//flip,
-                           attributes: attributes,
+                           textMatrix: textMatrix,
+                           attributes: baseAttributes,
                            in: CGContext)
         
         
