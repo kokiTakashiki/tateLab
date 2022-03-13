@@ -25,6 +25,12 @@ extension String {
     static var tateEditorViewID: String {
         return "TateEditorViewController"
     }
+    static var tateEditor2View: String {
+        return "TateEditor2ViewController"
+    }
+    static var tateEditor2ViewID: String {
+        return "TateEditor2ViewController"
+    }
     
     // MARK: xib Name or ID
     static var demoListCollectionCell: String {

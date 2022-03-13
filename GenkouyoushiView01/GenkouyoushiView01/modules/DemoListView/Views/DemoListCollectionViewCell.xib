@@ -54,7 +54,7 @@
                 <outlet property="baseView" destination="IiK-EV-V3B" id="P6C-8h-RXS"/>
                 <outlet property="titleLabel" destination="LuM-Kk-q7h" id="3ZT-gf-hHt"/>
             </connections>
-            <point key="canvasLocation" x="-136.23188405797103" y="-41.517857142857139"/>
+            <point key="canvasLocation" x="-128" y="-39"/>
         </collectionViewCell>
     </objects>
     <resources>

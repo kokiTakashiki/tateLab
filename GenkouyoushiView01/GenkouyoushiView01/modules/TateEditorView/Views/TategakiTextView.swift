@@ -76,6 +76,7 @@ public class TategakiTextView: UIView {
 //        layoutManager.addTextContainer(textContainer)
 //        textStorage.addLayoutManager(layoutManager)
 //        view = UITextView(frame: CGRect.zero, textContainer: textContainer)
+        
         view.backgroundColor = .clear
         self.view.translatesAutoresizingMaskIntoConstraints = false
         

@@ -25,8 +25,6 @@ final class TateEditorPresenter {
     private let router: TateEditorRouterInput
 
     // MARK: Computed Instance Properties
-    
-    private var tategakiContainerPresenter: TategakiContainerEventHandler?
 
     // MARK: Initializers
 

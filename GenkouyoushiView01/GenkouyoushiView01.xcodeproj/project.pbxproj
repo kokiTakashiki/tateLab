@@ -19,6 +19,11 @@
 		9A45170F27B8A4EA00DA5363 /* DemoListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4516F827B6F5FA00DA5363 /* DemoListCollectionViewCell.swift */; };
 		9A45171027B8A4ED00DA5363 /* DemoListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A45170127B893BC00DA5363 /* DemoListCollectionViewCell.xib */; };
 		9A45171227B8B51300DA5363 /* UICollectionView+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A45171127B8B51300DA5363 /* UICollectionView+Animation.swift */; };
+		9A5850C127DCE3DE00BF0DB5 /* LocalConsoleSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5850C027DCE3DE00BF0DB5 /* LocalConsoleSetting.swift */; };
+		9A5850C627DCFC7000BF0DB5 /* LocalConsole in Frameworks */ = {isa = PBXBuildFile; productRef = 9A5850C527DCFC7000BF0DB5 /* LocalConsole */; };
+		9A5850C827DDB25700BF0DB5 /* TateEditor2Routers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5850C727DDB25700BF0DB5 /* TateEditor2Routers.swift */; };
+		9A5850CA27DDB2A700BF0DB5 /* TateEditor2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5850C927DDB2A700BF0DB5 /* TateEditor2Presenter.swift */; };
+		9A5850CB27DDB33B00BF0DB5 /* TateEditor2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE90127C3A587008D75A4 /* TateEditor2ViewController.swift */; };
 		9A5CE8E927BFF556008D75A4 /* TateEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8E827BFF556008D75A4 /* TateEditorViewController.swift */; };
 		9A5CE8EC27C09836008D75A4 /* TateEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8EB27C09836008D75A4 /* TateEditorPresenter.swift */; };
 		9A5CE8EF27C09C83008D75A4 /* TateEditorRouters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8EE27C09C83008D75A4 /* TateEditorRouters.swift */; };
@@ -26,6 +31,7 @@
 		9A5CE8F327C0B13E008D75A4 /* TategakiTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8F227C0B13E008D75A4 /* TategakiTextView.swift */; };
 		9A5CE8F527C0D4DC008D75A4 /* Sample.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CE8F427C0D4DC008D75A4 /* Sample.rtf */; };
 		9A5CE8F727C0D5F5008D75A4 /* TategakiLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A5CE8F627C0D5F5008D75A4 /* TategakiLayoutManager.swift */; };
+		9A5CE90427C3B5A6008D75A4 /* TateEditor2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A5CE90327C3B5A6008D75A4 /* TateEditor2ViewController.storyboard */; };
 		9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */; };
 		9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460A6279EE8D200905C75 /* EditorInteractor.swift */; };
 		9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A7460AF27A574DC00905C75 /* EditEntity.swift */; };
@@ -54,6 +60,9 @@
 		9A45170527B8A36900DA5363 /* String+UIValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+UIValue.swift"; sourceTree = "<group>"; };
 		9A45170727B8A41B00DA5363 /* UIView+Material.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Material.swift"; sourceTree = "<group>"; };
 		9A45171127B8B51300DA5363 /* UICollectionView+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Animation.swift"; sourceTree = "<group>"; };
+		9A5850C027DCE3DE00BF0DB5 /* LocalConsoleSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConsoleSetting.swift; sourceTree = "<group>"; };
+		9A5850C727DDB25700BF0DB5 /* TateEditor2Routers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditor2Routers.swift; sourceTree = "<group>"; };
+		9A5850C927DDB2A700BF0DB5 /* TateEditor2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditor2Presenter.swift; sourceTree = "<group>"; };
 		9A5CE8E827BFF556008D75A4 /* TateEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditorViewController.swift; sourceTree = "<group>"; };
 		9A5CE8EB27C09836008D75A4 /* TateEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditorPresenter.swift; sourceTree = "<group>"; };
 		9A5CE8EE27C09C83008D75A4 /* TateEditorRouters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditorRouters.swift; sourceTree = "<group>"; };
@@ -61,6 +70,8 @@
 		9A5CE8F227C0B13E008D75A4 /* TategakiTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiTextView.swift; sourceTree = "<group>"; };
 		9A5CE8F427C0D4DC008D75A4 /* Sample.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = Sample.rtf; sourceTree = "<group>"; };
 		9A5CE8F627C0D5F5008D75A4 /* TategakiLayoutManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TategakiLayoutManager.swift; sourceTree = "<group>"; };
+		9A5CE90127C3A587008D75A4 /* TateEditor2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TateEditor2ViewController.swift; sourceTree = "<group>"; };
+		9A5CE90327C3B5A6008D75A4 /* TateEditor2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TateEditor2ViewController.storyboard; sourceTree = "<group>"; };
 		9A7460A2279D9B7B00905C75 /* UIViewController+Ex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ex.swift"; sourceTree = "<group>"; };
 		9A7460A6279EE8D200905C75 /* EditorInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorInteractor.swift; sourceTree = "<group>"; };
 		9A7460AF27A574DC00905C75 /* EditEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditEntity.swift; sourceTree = "<group>"; };
@@ -85,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5850C627DCFC7000BF0DB5 /* LocalConsole in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +188,7 @@
 			isa = PBXGroup;
 			children = (
 				9A4516FD27B7B84D00DA5363 /* BaseView.swift */,
+				9A5850C027DCE3DE00BF0DB5 /* LocalConsoleSetting.swift */,
 			);
 			path = UIParts;
 			sourceTree = "<group>";
@@ -220,8 +233,8 @@
 		9A5CE8FB27C103B1008D75A4 /* TateEditorView2 */ = {
 			isa = PBXGroup;
 			children = (
-				9A5CE8FE27C3A210008D75A4 /* Presenters */,
 				9A5CE8FF27C3A248008D75A4 /* Routers */,
+				9A5CE8FE27C3A210008D75A4 /* Presenters */,
 				9A5CE90027C3A253008D75A4 /* Views */,
 			);
 			path = TateEditorView2;
@@ -230,6 +243,7 @@
 		9A5CE8FE27C3A210008D75A4 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
+				9A5850C927DDB2A700BF0DB5 /* TateEditor2Presenter.swift */,
 			);
 			path = Presenters;
 			sourceTree = "<group>";
@@ -237,6 +251,7 @@
 		9A5CE8FF27C3A248008D75A4 /* Routers */ = {
 			isa = PBXGroup;
 			children = (
+				9A5850C727DDB25700BF0DB5 /* TateEditor2Routers.swift */,
 			);
 			path = Routers;
 			sourceTree = "<group>";
@@ -244,6 +259,8 @@
 		9A5CE90027C3A253008D75A4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9A5CE90127C3A587008D75A4 /* TateEditor2ViewController.swift */,
+				9A5CE90327C3B5A6008D75A4 /* TateEditor2ViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,8 +303,8 @@
 			isa = PBXGroup;
 			children = (
 				9A4516E127B6E8E500DA5363 /* DemoListView */,
-				9A45171327BA0AEE00DA5363 /* TateEditorView */,
 				9A82429D2795774200251DC1 /* EditorView */,
+				9A45171327BA0AEE00DA5363 /* TateEditorView */,
 				9A5CE8FB27C103B1008D75A4 /* TateEditorView2 */,
 			);
 			path = modules;
@@ -389,6 +406,7 @@
 			);
 			name = GenkouyoushiView01;
 			packageProductDependencies = (
+				9A5850C527DCFC7000BF0DB5 /* LocalConsole */,
 			);
 			productName = GenkouyoushiView01;
 			productReference = 9ACCD0822786C3BD00877ABE /* GenkouyoushiView01.app */;
@@ -419,6 +437,7 @@
 			);
 			mainGroup = 9ACCD0792786C3BD00877ABE;
 			packageReferences = (
+				9A5850C427DCFC7000BF0DB5 /* XCRemoteSwiftPackageReference "LocalConsole" */,
 			);
 			productRefGroup = 9ACCD0832786C3BD00877ABE /* Products */;
 			projectDirPath = "";
@@ -435,6 +454,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A45170E27B8A4E200DA5363 /* DemoListViewController.storyboard in Resources */,
+				9A5CE90427C3B5A6008D75A4 /* TateEditor2ViewController.storyboard in Resources */,
 				9A5CE8F527C0D4DC008D75A4 /* Sample.rtf in Resources */,
 				9ACCD0922786C3BF00877ABE /* LaunchScreen.storyboard in Resources */,
 				9A5CE8F127C09DB8008D75A4 /* TateEditorViewController.storyboard in Resources */,
@@ -453,7 +473,9 @@
 			files = (
 				9ACCD08A2786C3BD00877ABE /* EditorViewController.swift in Sources */,
 				9A5CE8F727C0D5F5008D75A4 /* TategakiLayoutManager.swift in Sources */,
+				9A5850C827DDB25700BF0DB5 /* TateEditor2Routers.swift in Sources */,
 				9A45170B27B8A4D600DA5363 /* DemoListPresenter.swift in Sources */,
+				9A5850CB27DDB33B00BF0DB5 /* TateEditor2ViewController.swift in Sources */,
 				9A7460A3279D9B7B00905C75 /* UIViewController+Ex.swift in Sources */,
 				9A82429C278745D800251DC1 /* TategakiContainerViewController.swift in Sources */,
 				9A45171227B8B51300DA5363 /* UICollectionView+Animation.swift in Sources */,
@@ -466,6 +488,8 @@
 				9A5CE8EF27C09C83008D75A4 /* TateEditorRouters.swift in Sources */,
 				9A7460A7279EE8D200905C75 /* EditorInteractor.swift in Sources */,
 				9A5CE8F327C0B13E008D75A4 /* TategakiTextView.swift in Sources */,
+				9A5850C127DCE3DE00BF0DB5 /* LocalConsoleSetting.swift in Sources */,
+				9A5850CA27DDB2A700BF0DB5 /* TateEditor2Presenter.swift in Sources */,
 				9AF7A39B279D7F5500484C37 /* EditorRouter.swift in Sources */,
 				9A45170627B8A36900DA5363 /* String+UIValue.swift in Sources */,
 				9A7460B027A574DC00905C75 /* EditEntity.swift in Sources */,
@@ -706,6 +730,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9A5850C427DCFC7000BF0DB5 /* XCRemoteSwiftPackageReference "LocalConsole" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/duraidabdul/LocalConsole/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9A5850C527DCFC7000BF0DB5 /* LocalConsole */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9A5850C427DCFC7000BF0DB5 /* XCRemoteSwiftPackageReference "LocalConsole" */;
+			productName = LocalConsole;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9ACCD07A2786C3BD00877ABE /* Project object */;
 }

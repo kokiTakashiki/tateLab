@@ -29,6 +29,15 @@ final class DemoListViewController: UIViewController {
         
         Task {
             await presenter.viewDidLoad()
+            self.navigationItem.title = NSLocalizedString("title", comment: "")
+            
+            // debug mode
+            let barButton = UIBarButtonItem(image: UIImage(systemName: "chevron.left.forwardslash.chevron.right"),
+                                            style: .done,
+                                           target: self,
+                                           action: #selector(debugPressed(_:)))
+            barButton.tintColor = .label
+            self.navigationItem.rightBarButtonItem = barButton
         }
     }
     
@@ -51,6 +60,11 @@ final class DemoListViewController: UIViewController {
     }
 
     // MARK: Other Private Methods
+    
+    @objc func debugPressed(_ sender: UIBarButtonItem) {
+        // PiP関連でiPadで呼び出すとアプリ内のUIが停止する（もしくはこのコンソールviewにもってかれる？）のでiPadでは使わないこと。
+        consoleManager.isVisible.toggle()
+    }
 }
 
 extension DemoListViewController: UICollectionViewDataSource {
